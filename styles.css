@@ -264,6 +264,40 @@ body {
     border-radius: 10px; /* Rounded border */
     object-fit: cover; /* Maintain aspect ratio without distortion */
   }
+
+  .team-section {
+    text-align: center;
+  }
+
+  .team-section h2 {
+    margin-top: 0px; /* Reduce this value to bring the title closer to the picture */
+  }
+  
+  .team-picture {
+    width: 100%;
+    max-width: 800px; /* Adjust based on your preferred size */
+    margin: 10px auto;
+    margin-bottom: 10px; /* Reduce this value to bring the picture closer to the title */
+  }
+  
+  .roster {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .forwards, .backs {
+    width: 40%; /* Adjust based on your preferred size */
+  }
+
+  .forwards p, .backs p {
+    margin: 3px 0; /* Adjust this value to change the spacing between names */
+  }
+  
+  .coaches {
+    margin-top: 20px;
+  }
+  
   
   
   
