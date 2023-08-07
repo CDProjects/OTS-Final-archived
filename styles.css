@@ -260,7 +260,9 @@ body {
   
   .article-picture {
     width: 100px; /* Adjust picture size */
+    height: 60px; /* Set the desired height */
     border-radius: 10px; /* Rounded border */
+    object-fit: cover; /* Maintain aspect ratio without distortion */
   }
   
   
