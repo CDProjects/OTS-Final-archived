@@ -13,7 +13,7 @@ body {
     position: fixed;
     width: 100%;
     background-color: #000000;
-    height: 30px; /* You can set the desired height here */
+    height: 60px; /* You can set the desired height here */
   }
   
   .logo-title {
