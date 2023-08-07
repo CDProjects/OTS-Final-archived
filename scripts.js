@@ -4,7 +4,7 @@ function toggleMenu() {
 
   if (subMenus.style.maxHeight === '0px' || subMenus.style.maxHeight === '') {
     // Ease-in effect when opening
-    subMenus.style.transition = 'max-height 1s ease-in'; // 1-second ease-in
+    subMenus.style.transition = 'max-height 0.5s ease-in'; // 1-second ease-in
     subMenus.style.maxHeight = '100vh';
   } else {
     // Immediate disappearance when closing
