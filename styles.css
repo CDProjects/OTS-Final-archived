@@ -9,18 +9,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px; /* Adjust padding to reduce nav-bar height */
+    padding-right : 0px; /* Adjust padding to reduce nav-bar height */
     position: fixed;
     width: 100%;
     background-color: #000000;
     height: 60px; /* You can set the desired height here */
+    position: relative; /* Ensure absolute positioning of the child elements */
   }
   
   .logo-title {
     display: flex;
     align-items: center;
     padding-top: 10px;
-    padding-left: 10px; /* Adjust this value to move the logo and title to the right */
+    margin-left: 4%; /* Adjust this value to match the spacing of the icon-burger */
   }
   
   .logo {
@@ -46,18 +47,47 @@ body {
     white-space: nowrap; /* Prevent the text from wrapping to the next line */
   }  
   
-  .hamburger-menu {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  .icon-burger {
+    display: flex; /* Change this to flex or block to make the icon visible */
+    flex-direction: column; /* Align the lines vertically */
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    margin-top: 5.5px; /* Adjust this value to move the icon further down */
+    transform: translateY(-50%);
   }
   
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
+  .icon-burger .line {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 3px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
   }
+  
+/* Styles for the 'X' icon */
+  .icon-burger.active .line:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -2.5px; /* Half the height */
+    margin-left: -15px; /* Half the width */
+  }
+
+  .icon-burger.active .line:nth-child(2) {
+    opacity: 0; /* Hide the middle line */
+  }  
+  
+  .icon-burger.active .line:nth-child(3) {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -2.5px; /* Half the height */
+    margin-left: -15px; /* Half the width */
+  }  
   
   .sub-menus {
     display: none;
