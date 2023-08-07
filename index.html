@@ -1,48 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-  <title>Old Town Shamrocks</title>
-</head>
-<body>
-  <div class="nav-bar">
-    <div class="sub-menus" onclick="toggleMenu()">
-      <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#news">NEWS</a></li>
-        <li><a href="#team">TEAM</a></li>
-        <li><a href="#training">TRAINING</a></li>
-        <li><a href="#juniors">JUNIORS</a></li>
-        <li><a href="#fixtures">FIXTURES</a></li>
-        <li><a href="#media">MEDIA</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>    
-    <div class="logo-title">
-      <img src="images/OTS Logo black.jpg" alt="Old Town Shamrocks Logo" class="logo">
-      <div class="title-container">
-        <h1>Old Town Shamrocks</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <title>Old Town Shamrocks</title>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="sub-menus" onclick="toggleMenu()">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#news">NEWS</a></li>
+          <li><a href="#team">TEAM</a></li>
+          <li><a href="#training">TRAINING</a></li>
+          <li><a href="#juniors">JUNIORS</a></li>
+          <li><a href="#fixtures">FIXTURES</a></li>
+          <li><a href="#media">MEDIA</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="logo-title">
+        <img
+          src="images/OTS Logo black.jpg"
+          alt="Old Town Shamrocks Logo"
+          class="logo"
+        />
+        <div class="title-container">
+          <h1>Old Town Shamrocks</h1>
+        </div>
+      </div>
+      <div class="icon-burger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
     </div>
-    <div class="icon-burger" onclick="toggleMenu()">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>    
-  </div>  
 
-  <div class="sub-menus">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-    <!-- Additional sub-menu items here -->
-  </div>
+    <div class="sub-menus">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <!-- Additional sub-menu items here -->
+    </div>
 
-  <script src="scripts.js"></script>
-</body>
+    <section id="home">
+      <div class="carousel">
+        <div class="carousel-item active">
+          <img src="Images/Akseli Peltoniemi.png" alt="Image 1" />
+        </div>
+        <div class="carousel-item">
+          <img src="Images/Alejandro Ruiz.png" alt="Image 2" />
+        </div>
+        <!-- Repeat for additional images -->
+      </div>
+    </section>
+    <script src="scripts.js"></script>
+  </body>
 </html>

@@ -14,3 +14,25 @@ function toggleMenu() {
 
   hamburgerMenu.classList.toggle('active');
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Preload images
+  const images = ['Images/Akseli Peltoniemi.png', 'Images/Alejandro Ruiz.png'];
+  images.forEach((src) => {
+    const img = new Image();
+    img.src = src;
+  });
+
+  // Carousel functionality
+  const carouselItems = document.querySelectorAll('.carousel-item');
+  let currentIndex = 0;
+
+  function carouselCycle() {
+    carouselItems[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % carouselItems.length;
+    carouselItems[currentIndex].classList.add('active');
+  }
+
+  // Cycle through images every 3 seconds
+  setInterval(carouselCycle, 3000);
+});

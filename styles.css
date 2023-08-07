@@ -132,6 +132,32 @@ body {
     color: #2E8B57; /* Sea green color */
   }
 
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust based on your desired height */
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Fade-in and fade-out effect */
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scale images to cover the entire carousel */
+  }
+  
+  .carousel-item.active {
+    opacity: 1; /* Visible when active */
+  }
+  
+
   
   
   
