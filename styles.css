@@ -35,7 +35,7 @@ body {
   }
 
   .title-container h1 {
-    font-size: 18px; /* Adjust this value to the desired font size */
+    font-size: 24px; /* Adjust this value to the desired font size */
     margin: 0; /* Remove any default margins */
     overflow: hidden; /* Hide any overflow if the text is too large */
     text-overflow: ellipsis; /* Display an ellipsis if the text overflows */
