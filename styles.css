@@ -126,6 +126,12 @@ body {
   .sub-menus ul li a:hover {
     color: #2E8B57 !important; /* Sea green color, using !important to override other styles */
   }
+
+  .sub-menus ul li a:focus,
+  .sub-menus ul li a:active {
+    color: #2E8B57; /* Sea green color */
+  }
+
   
   
   
