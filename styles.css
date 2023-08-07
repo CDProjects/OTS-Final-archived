@@ -9,10 +9,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 5px; /* Adjust padding to reduce nav-bar height */
     position: fixed;
     width: 100%;
     background-color: #000000;
+    height: 50px; /* You can set the desired height here */
   }
   
   .logo-title {
@@ -22,6 +23,15 @@ body {
   
   .logo {
     margin-right: 10px;
+  }
+
+  .title-container {
+    width: 191.017px; /* Set the width of the title container */
+    height: 36px; /* Set the height of the title container */
+    font-weight: bold; /* Make the title text strong */
+    display: flex; /* Use flex to center the text within the container */
+    align-items: center; /* Center text vertically */
+    overflow: hidden; /* Hide any overflow if the text is too large */
   }
   
   .hamburger-menu {
