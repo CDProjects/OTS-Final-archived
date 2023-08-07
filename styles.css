@@ -196,7 +196,7 @@ body {
   
   .home-title {
     font-size: 40px; /* Adjust the font size of the title */
-    margin: 0px 0; /* Add some margin around the title */
+    margin: 5px 0; /* Add some margin around the title */
   }
   
   .home-paragraph {
@@ -209,6 +209,61 @@ body {
     width: 80%; /* Set the width to 80% of the parent container */
     margin: 0 auto; /* Center the container */
   }
+
+  .about-us-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2E8B57; /* Sea green color */
+    color: #fff; /* White text */
+    border: 2px solid #2E8B57; /* Sea green border */
+    border-radius: 10px; /* Rounded border */
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for color change */
+    margin-top: 15px; /* Add space above the button */
+  }
+  
+  .about-us-btn:hover {
+    background-color: #fff; /* White background on hover */
+    color: #2E8B57; /* Sea green text on hover */
+    
+  }
+
+  .news-section {
+    padding: 20px 0; /* Add some padding around the news section */
+  }
+  
+  .news-title {
+    text-align: center; /* Center the news title */
+    margin-bottom: 20px; /* Add space below the title */
+  }
+  
+  .news-item {
+    margin-bottom: 20px; /* Space between news items */
+  }
+  
+  .news-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit; /* Use the same color as the surrounding text */
+  }
+  
+  .news-icon {
+    width: 40px; /* Adjust icon size */
+    margin-right: 10px; /* Space between icon and name */
+  }
+  
+  .news-name {
+    margin-right: 10px; /* Space between name and picture */
+  }
+  
+  .article-picture {
+    width: 100px; /* Adjust picture size */
+    border-radius: 10px; /* Rounded border */
+  }
+  
+  
   
   
 
