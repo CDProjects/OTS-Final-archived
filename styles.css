@@ -14,13 +14,14 @@ body {
     width: 100%;
     background-color: #000000;
     height: 60px; /* You can set the desired height here */
-    position: relative; /* Ensure absolute positioning of the child elements */
+    top: 0; /* Ensure the nav-bar sticks to the top of the viewport */
+    z-index: 1001; /* Ensures the nav-bar stays on top of other elements */
   }
   
   .logo-title {
     display: flex;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 0px;
     margin-left: 4%; /* Adjust this value to match the spacing of the icon-burger */
   }
   
@@ -52,7 +53,7 @@ body {
     flex-direction: column; /* Align the lines vertically */
     position: absolute;
     right: 4%;
-    top: 50%;
+    top: 40%;
     margin-top: 5.5px; /* Adjust this value to move the icon further down */
     transform: translateY(-50%);
   }
@@ -186,6 +187,10 @@ body {
     height: auto; /* Maintain aspect ratio */
     margin-right: 1px;
   }
+
+  .home {
+    margin-top: 80px; /* Equal to the height of the nav-bar */
+  }
   
   .home-section {
     text-align: center; /* Center the content */
@@ -271,6 +276,7 @@ body {
 
   .team-section h2 {
     margin-top: 0px; /* Reduce this value to bring the title closer to the picture */
+    margin-bottom: 0px; /* Adjust this value to bring the Forwards and Backs closer to the title */
   }
   
   .team-picture {
@@ -297,6 +303,11 @@ body {
   .coaches {
     margin-top: 20px;
   }
+
+  .coaches p {
+    margin: 3px 0; /* Adjust this value to match the spacing between the names in the forwards and backs */
+  }
+  
   
   
   
