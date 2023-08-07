@@ -170,6 +170,7 @@ body {
     border-bottom: 1px solid #ffffff; /* White bottom border */
     border-left: none; /* No left border */
     border-radius: 0 10px 10px 0; /* Rounded edges on the top right and bottom right corners */
+    z-index: 1001; /* A value higher than the z-index of the carousel */
   }
   
   .social-icon {
@@ -184,6 +185,29 @@ body {
     width: 40px; /* Adjust this value to match the size of the Instagram icon */
     height: auto; /* Maintain aspect ratio */
     margin-right: 1px;
+  }
+  
+  .home-section {
+    text-align: center; /* Center the content */
+    padding: 0px; /* Add some padding */
+    background-color: #000000; /* Match the background color with the rest of the site */
+    color: #ffffff; /* White text color */
+  }
+  
+  .home-title {
+    font-size: 40px; /* Adjust the font size of the title */
+    margin: 0px 0; /* Add some margin around the title */
+  }
+  
+  .home-paragraph {
+    font-size: 15px; /* Adjust the font size of the paragraph */
+    max-width: 400px; /* Set a maximum width to control the line length */
+    margin: 0 auto; /* Center the paragraph if it's narrower than the max-width */
+  }
+
+  .content-container {
+    width: 80%; /* Set the width to 80% of the parent container */
+    margin: 0 auto; /* Center the container */
   }
   
   
