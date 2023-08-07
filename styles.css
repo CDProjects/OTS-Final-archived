@@ -160,14 +160,14 @@ body {
 
   .fixed-sidebar {
     position: fixed;
-    top: 50%;
+    top: 20%;
     left: 0;
     transform: translateY(-50%);
     background-color: #000;
     padding: 1px 4px; 
-    border-top: 0.5px solid #ffffff; /* White top border */
-    border-right: 0.5px solid #ffffff; /* White right border */
-    border-bottom: 0.5px solid #ffffff; /* White bottom border */
+    border-top: 1px solid #ffffff; /* White top border */
+    border-right: 1px solid #ffffff; /* White right border */
+    border-bottom: 1px solid #ffffff; /* White bottom border */
     border-left: none; /* No left border */
     border-radius: 0 10px 10px 0; /* Rounded edges on the top right and bottom right corners */
   }
