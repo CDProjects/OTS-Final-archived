@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px; /* Adjust padding to reduce nav-bar height */
+    padding: 1px; /* Adjust padding to reduce nav-bar height */
     position: fixed;
     width: 100%;
     background-color: #000000;
