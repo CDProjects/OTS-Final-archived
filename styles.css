@@ -90,12 +90,42 @@ body {
   }  
   
   .sub-menus {
-    display: none;
-    background-color: #000000;
-    padding: 15px;
     position: fixed;
-    top: 60px;
-    width: 100%;
+    top: 60px; /* Adjust based on the height of your nav-bar */
+    left: 0;
+    right: 0;
+    background-color: #000000;
     text-align: center;
+    overflow: hidden;
+    max-height: 0;
+    display: block; /* Remove display: none */
+    z-index: 1000; /* High value to ensure it appears on top */
   }
+  
+  .sub-menus.active {
+    max-height: 100vh; /* Full viewport height */
+  }  
+  
+  .sub-menus ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sub-menus ul li {
+    padding: 10px;
+  }
+  
+  .sub-menus ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    transition: color 0.3s ease; /* Optional: smooth transition for color change */
+  }
+
+  .sub-menus ul li a:hover {
+    color: #2E8B57 !important; /* Sea green color, using !important to override other styles */
+  }
+  
+  
   
