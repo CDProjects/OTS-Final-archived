@@ -33,6 +33,14 @@ body {
     align-items: center; /* Center text vertically */
     overflow: hidden; /* Hide any overflow if the text is too large */
   }
+
+  .title-container h1 {
+    font-size: 18px; /* Adjust this value to the desired font size */
+    margin: 0; /* Remove any default margins */
+    overflow: hidden; /* Hide any overflow if the text is too large */
+    text-overflow: ellipsis; /* Display an ellipsis if the text overflows */
+    white-space: nowrap; /* Prevent the text from wrapping to the next line */
+  }  
   
   .hamburger-menu {
     cursor: pointer;
