@@ -15,6 +15,12 @@ function toggleMenu() {
   hamburgerMenu.classList.toggle('active');
 }
 
+document.getElementById('home-link').addEventListener('click', function(e) {
+  e.preventDefault(); // Prevent the default behavior
+  window.scrollTo(0, 0); // Scroll to the top of the page
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
   // Preload images
   const images = ['Images/Akseli Peltoniemi.png', 'Images/Alejandro Ruiz.png'];

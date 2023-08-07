@@ -235,7 +235,7 @@ body {
   }
 
   .news-section {
-    padding: 20px 0; /* Add some padding around the news section */
+    padding-top: 60px; /* Equal to the height of the nav-bar */
   }
   
   .news-title {
@@ -272,6 +272,7 @@ body {
 
   .team-section {
     text-align: center;
+    padding-top: 60px; /* Equal to the height of the nav-bar */
   }
 
   .team-section h2 {
