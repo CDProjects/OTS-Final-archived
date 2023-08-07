@@ -19,6 +19,8 @@ body {
   .logo-title {
     display: flex;
     align-items: center;
+    padding-top: 10px;
+    padding-left: 10px; /* Adjust this value to move the logo and title to the right */
   }
   
   .logo {
