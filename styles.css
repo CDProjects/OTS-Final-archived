@@ -4,6 +4,13 @@ body {
     font-family: 'Oswald', sans-serif;
     margin: 0;
   }
+
+  .section-title {
+    font-size: 24px; /* Example font size */
+    margin-top: 0;
+    margin-bottom: 0;
+    /* Other styling properties as needed */
+  }
   
   .nav-bar {
     display: flex;
@@ -235,7 +242,7 @@ body {
   }
 
   .news-section {
-    padding-top: 60px; /* Equal to the height of the nav-bar */
+    padding-top: 40px; /* Equal to the height of the nav-bar */
   }
   
   .news-title {
@@ -272,7 +279,7 @@ body {
 
   .team-section {
     text-align: center;
-    padding-top: 60px; /* Equal to the height of the nav-bar */
+    padding-top: 40px; /* Equal to the height of the nav-bar */
   }
 
   .team-section h2 {
@@ -311,7 +318,7 @@ body {
   
   .training-section {
     text-align: center;
-    padding: 60px 0;
+    padding-top: 40px;
   }
   
   .training-container {
@@ -335,16 +342,17 @@ body {
 
   .training-info {
     text-align: center;
-    padding: 20px 0;
+    padding-top: 40px;
+    margin-bottom: 0; /* Remove bottom margin */
   }
   
   .training-info p {
     margin: 10px 0; /* Adjust this value to change the spacing between paragraphs */
+    margin-bottom: 0;
   }
 
   .training-section {
     text-align: center;
-    padding: 20px 0;
     padding-top: 60px;
   }
   
@@ -367,11 +375,11 @@ body {
 
   .juniors-section {
     text-align: center;
-    padding: 60px 0; /* Adjust the padding to create the desired space between sections */
+    padding-top: 50px; /* Adjust the padding to create the desired space between sections */
     color: #ffffff; /* White text color */
   }
   
-  .juniors-picture {
+  .juniors-picture, .fixtures-picture {
     width: 100%;
     margin: 10px auto;
     margin-bottom: 10px; /* Reduce this value to bring the picture closer to the title */
@@ -388,6 +396,25 @@ body {
     max-width: 400px; /* Set a maximum width to control the line length */
     margin: 0 auto; /* Center the paragraph if it's narrower than the max-width */
   }
+
+  .fixtures-section {
+    text-align: center;
+    padding-top: 40px; /* Adjust the padding to create the desired space between sections */
+    color: #ffffff; /* White text color */
+  }
+
+  .fixtures-subtitle {
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  .fixtures-text {
+    text-align: center;
+    max-width: 400px;
+    margin: 10px auto;
+    font-size: 15px;
+  }
+  
   
   
   
