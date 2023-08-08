@@ -394,7 +394,7 @@
   <div class="content-container">
     <h1>CONTACT</h1>
     <!-- Form section -->
-    <form id="contact-form" action="/submit-contact" method="post">
+    <form id="contact-form" action="contact.php" method="post">
       <div class="form-group">
         <label for="name">Name:</label>
         <div class="input-wrapper">
@@ -404,7 +404,13 @@
       <div class="form-group">
         <label for="age">Age:</label>
         <div class="input-wrapper">
-        <input type="number" id="age" name="age" required>
+        <select id="age" name="age" required>
+          <option value="">Select Age</option>
+  <!-- Options from 0 to 99 -->
+  <?php for ($i = 0; $i <= 99; $i++) { ?>
+    <option value="<?= $i ?>"><?= $i ?></option>
+  <?php } ?>
+</select>
       </div>
       </div>
       <div class="form-group">
