@@ -364,6 +364,32 @@ body {
   .training-section h2 {
     margin-top: 0; /* Remove top margin to bring the title closer */
   }
+
+  .juniors-section {
+    text-align: center;
+    padding: 60px 0; /* Adjust the padding to create the desired space between sections */
+    color: #ffffff; /* White text color */
+  }
+  
+  .juniors-picture {
+    width: 100%;
+    margin: 10px auto;
+    margin-bottom: 10px; /* Reduce this value to bring the picture closer to the title */
+  }
+  
+  .juniors-section h2 { /* Updated to h2 since the title is an h2 element */
+    font-size: 24px; /* Adjust the font size of the title */
+    margin-top: 0px;
+    margin-bottom: 0px; /* Remove the bottom margin to match the TEAM section */
+  }
+  
+  .juniors-section .content-container p {
+    font-size: 15px; /* Adjust the font size of the paragraph */
+    max-width: 400px; /* Set a maximum width to control the line length */
+    margin: 0 auto; /* Center the paragraph if it's narrower than the max-width */
+  }
+  
+  
   
   
   
