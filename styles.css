@@ -1,441 +1,447 @@
 body {
-    background-color: #000000;
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    margin: 0;
-  }
+  background-color: #000000;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+}
 
-  .section-title {
-    font-size: 24px; /* Example font size */
-    margin-top: 0;
-    margin-bottom: 0;
-    /* Other styling properties as needed */
-  }
-  
-  .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right : 0px; /* Adjust padding to reduce nav-bar height */
-    position: fixed;
-    width: 100%;
-    background-color: #000000;
-    height: 60px; /* You can set the desired height here */
-    top: 0; /* Ensure the nav-bar sticks to the top of the viewport */
-    z-index: 1001; /* Ensures the nav-bar stays on top of other elements */
-  }
-  
-  .logo-title {
-    display: flex;
-    align-items: center;
-    padding-top: 0px;
-    margin-left: 4%; /* Adjust this value to match the spacing of the icon-burger */
-  }
-  
-  .logo {
-    width: 50px; /* Set the width to 50 pixels */
-    height: 50px; /* Set the height to 50 pixels */
-    margin-right: 10px; /* Optional: space between the logo and the title */
-  }  
+.section-title {
+  font-size: 24px; /* Example font size */
+  margin-top: 0;
+  margin-bottom: 0;
+  /* Other styling properties as needed */
+}
 
-  .title-container {
-    width: 191.017px; /* Set the width of the title container */
-    height: 36px; /* Set the height of the title container */
-    font-weight: bold; /* Make the title text strong */
-    display: flex; /* Use flex to center the text within the container */
-    align-items: center; /* Center text vertically */
-    overflow: hidden; /* Hide any overflow if the text is too large */
-  }
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 0px; /* Adjust padding to reduce nav-bar height */
+  position: fixed;
+  width: 100%;
+  background-color: #000000;
+  height: 60px; /* You can set the desired height here */
+  top: 0; /* Ensure the nav-bar sticks to the top of the viewport */
+  z-index: 1001; /* Ensures the nav-bar stays on top of other elements */
+}
 
-  .title-container h1 {
-    font-size: 24px; /* Adjust this value to the desired font size */
-    margin: 0; /* Remove any default margins */
-    overflow: hidden; /* Hide any overflow if the text is too large */
-    text-overflow: ellipsis; /* Display an ellipsis if the text overflows */
-    white-space: nowrap; /* Prevent the text from wrapping to the next line */
-  }  
-  
-  .icon-burger {
-    display: flex; /* Change this to flex or block to make the icon visible */
-    flex-direction: column; /* Align the lines vertically */
-    position: absolute;
-    right: 4%;
-    top: 40%;
-    margin-top: 5.5px; /* Adjust this value to move the icon further down */
-    transform: translateY(-50%);
-  }
-  
-  .icon-burger .line {
-    width: 30px;
-    height: 5px;
-    background-color: #fff;
-    margin: 3px;
-    border-radius: 3px;
-    transition: all 0.3s ease-in-out;
-  }
-  
+.logo-title {
+  display: flex;
+  align-items: center;
+  padding-top: 0px;
+  margin-left: 4%; /* Adjust this value to match the spacing of the icon-burger */
+}
+
+.logo {
+  width: 50px; /* Set the width to 50 pixels */
+  height: 50px; /* Set the height to 50 pixels */
+  margin-right: 10px; /* Optional: space between the logo and the title */
+}
+
+.title-container {
+  width: 191.017px; /* Set the width of the title container */
+  height: 36px; /* Set the height of the title container */
+  font-weight: bold; /* Make the title text strong */
+  display: flex; /* Use flex to center the text within the container */
+  align-items: center; /* Center text vertically */
+  overflow: hidden; /* Hide any overflow if the text is too large */
+}
+
+.title-container h1 {
+  font-size: 24px; /* Adjust this value to the desired font size */
+  margin: 0; /* Remove any default margins */
+  overflow: hidden; /* Hide any overflow if the text is too large */
+  text-overflow: ellipsis; /* Display an ellipsis if the text overflows */
+  white-space: nowrap; /* Prevent the text from wrapping to the next line */
+}
+
+.icon-burger {
+  display: flex; /* Change this to flex or block to make the icon visible */
+  flex-direction: column; /* Align the lines vertically */
+  position: absolute;
+  right: 4%;
+  top: 40%;
+  margin-top: 5.5px; /* Adjust this value to move the icon further down */
+  transform: translateY(-50%);
+}
+
+.icon-burger .line {
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 3px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
 /* Styles for the 'X' icon */
-  .icon-burger.active .line:nth-child(1) {
-    transform: rotate(45deg);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -2.5px; /* Half the height */
-    margin-left: -15px; /* Half the width */
-  }
+.icon-burger.active .line:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -2.5px; /* Half the height */
+  margin-left: -15px; /* Half the width */
+}
 
-  .icon-burger.active .line:nth-child(2) {
-    opacity: 0; /* Hide the middle line */
-  }  
-  
-  .icon-burger.active .line:nth-child(3) {
-    transform: rotate(-45deg);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -2.5px; /* Half the height */
-    margin-left: -15px; /* Half the width */
-  }  
-  
-  .sub-menus {
-    position: fixed;
-    top: 60px; /* Adjust based on the height of your nav-bar */
-    left: 0;
-    right: 0;
-    background-color: #000000;
-    text-align: center;
-    overflow: hidden;
-    max-height: 0;
-    display: block; /* Remove display: none */
-    z-index: 1000; /* High value to ensure it appears on top */
-  }
-  
-  .sub-menus.active {
-    max-height: 100vh; /* Full viewport height */
-  }  
-  
-  .sub-menus ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sub-menus ul li {
-    padding: 10px;
-  }
-  
-  .sub-menus ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-    transition: color 0.3s ease; /* Optional: smooth transition for color change */
-  }
+.icon-burger.active .line:nth-child(2) {
+  opacity: 0; /* Hide the middle line */
+}
 
-  .sub-menus ul li a:hover {
-    color: #2E8B57 !important; /* Sea green color, using !important to override other styles */
-  }
+.icon-burger.active .line:nth-child(3) {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -2.5px; /* Half the height */
+  margin-left: -15px; /* Half the width */
+}
 
-  .sub-menus ul li a:focus,
-  .sub-menus ul li a:active {
-    color: #2E8B57; /* Sea green color */
-  }
+.sub-menus {
+  position: fixed;
+  top: 60px; /* Adjust based on the height of your nav-bar */
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  text-align: center;
+  overflow: hidden;
+  max-height: 0;
+  display: block; /* Remove display: none */
+  z-index: 1000; /* High value to ensure it appears on top */
+}
 
-  .carousel {
-    position: relative;
-    width: 100%;
-    height: 400px; /* Adjust based on your desired height */
-    overflow: hidden;
-    margin-top: -20px;
-  }
-  
-  .carousel-item {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out; /* Fade-in and fade-out effect */
-  }
-  
-  .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Scale images to cover the entire carousel */
-  }
-  
-  .carousel-item.active {
-    opacity: 1; /* Visible when active */
-  }
+.sub-menus.active {
+  max-height: 100vh; /* Full viewport height */
+}
 
-  .fixed-sidebar {
-    position: fixed;
-    top: 20%;
-    left: 0;
-    transform: translateY(-50%);
-    background-color: #000;
-    padding: 1px 2px; 
-    border-top: 1px solid #ffffff; /* White top border */
-    border-right: 1px solid #ffffff; /* White right border */
-    border-bottom: 1px solid #ffffff; /* White bottom border */
-    border-left: none; /* No left border */
-    border-radius: 0 10px 10px 0; /* Rounded edges on the top right and bottom right corners */
-    z-index: 1001; /* A value higher than the z-index of the carousel */
-  }
-  
-  .social-icon {
-    display: block;
-    width: 40px; /* Adjust the width of the icons */
-    height: auto; /* Maintain aspect ratio */
-    margin: 9px 0;
-    margin-bottom: 10px; /* Add some spacing between the icons */
-  }
+.sub-menus ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
-  .facebook-icon {
-    width: 40px; /* Adjust this value to match the size of the Instagram icon */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 1px;
-  }
+.sub-menus ul li {
+  padding: 10px;
+}
 
-  .home {
-    margin-top: 80px; /* Equal to the height of the nav-bar */
-  }
-  
-  .home-section {
-    text-align: center; /* Center the content */
-    padding: 0px; /* Add some padding */
-    background-color: #000000; /* Match the background color with the rest of the site */
-    color: #ffffff; /* White text color */
-  }
-  
-  .home-title {
-    font-size: 40px; /* Adjust the font size of the title */
-    margin: 5px 0; /* Add some margin around the title */
-  }
-  
-  .home-paragraph {
-    font-size: 15px; /* Adjust the font size of the paragraph */
-    max-width: 400px; /* Set a maximum width to control the line length */
-    margin: 0 auto; /* Center the paragraph if it's narrower than the max-width */
-  }
+.sub-menus ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  transition: color 0.3s ease; /* Optional: smooth transition for color change */
+}
 
-  .content-container {
-    width: 80%; /* Set the width to 80% of the parent container */
-    margin: 0 auto; /* Center the container */
-  }
+.sub-menus ul li a:hover {
+  color: #2e8b57 !important; /* Sea green color, using !important to override other styles */
+}
 
-  .about-us-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #2E8B57; /* Sea green color */
-    color: #fff; /* White text */
-    border: 2px solid #2E8B57; /* Sea green border */
-    border-radius: 10px; /* Rounded border */
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for color change */
-    margin-top: 15px; /* Add space above the button */
-  }
-  
-  .about-us-btn:hover {
-    background-color: #fff; /* White background on hover */
-    color: #2E8B57; /* Sea green text on hover */
-    
-  }
+.sub-menus ul li a:focus,
+.sub-menus ul li a:active {
+  color: #2e8b57; /* Sea green color */
+}
 
-  .news-section {
-    padding-top: 40px; /* Equal to the height of the nav-bar */
-  }
-  
-  .news-title {
-    text-align: center; /* Center the news title */
-    margin-bottom: 20px; /* Add space below the title */
-  }
-  
-  .news-item {
-    margin-bottom: 20px; /* Space between news items */
-  }
-  
-  .news-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: inherit; /* Use the same color as the surrounding text */
-  }
-  
-  .news-icon {
-    width: 40px; /* Adjust icon size */
-    margin-right: 10px; /* Space between icon and name */
-  }
-  
-  .news-name {
-    margin-right: 10px; /* Space between name and picture */
-  }
-  
-  .article-picture {
-    width: 100px; /* Adjust picture size */
-    height: 60px; /* Set the desired height */
-    border-radius: 10px; /* Rounded border */
-    object-fit: cover; /* Maintain aspect ratio without distortion */
-  }
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust based on your desired height */
+  overflow: hidden;
+  margin-top: -20px;
+}
 
-  .team-section {
-    text-align: center;
-    padding-top: 60px; /* Equal to the height of the nav-bar */
-  }
+.carousel-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Fade-in and fade-out effect */
+}
 
-  .team-section h2 {
-    margin-top: 0px; /* Reduce this value to bring the title closer to the picture */
-    margin-bottom: 0px; /* Adjust this value to bring the Forwards and Backs closer to the title */
-  }
-  
-  .team-picture {
-    width: 100%;
-    max-width: 800px; /* Adjust based on your preferred size */
-    margin: 10px auto;
-    margin-bottom: 10px; /* Reduce this value to bring the picture closer to the title */
-  }
-  
-  .roster {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  
-  .forwards, .backs {
-    width: 40%; /* Adjust based on your preferred size */
-  }
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Scale images to cover the entire carousel */
+}
 
-  .forwards p, .backs p {
-    margin: 3px 0; /* Adjust this value to change the spacing between names */
-  }
-  
-  .coaches {
-    margin-top: 20px;
-  }
+.carousel-item.active {
+  opacity: 1; /* Visible when active */
+}
 
-  .coaches p {
-    margin: 3px 0; /* Adjust this value to match the spacing between the names in the forwards and backs */
-  }
-  
-  .training-section {
-    text-align: center;
-    padding-top: 40px;
-  }
-  
-  .training-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  
-  .juniors, .mens-team {
-    width: 40%; /* Adjust based on your preferred size */
-    margin: 10px 0;
-  }
-  
-  .juniors h3, .mens-team h3 {
-    margin: 0;
-  }
-  
-  .juniors p, .mens-team p {
-    margin: 3px 0; /* Adjust this value to change the spacing between lines */
-  }
+.fixed-sidebar {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #000;
+  padding: 1px 2px;
+  border-top: 1px solid #ffffff; /* White top border */
+  border-right: 1px solid #ffffff; /* White right border */
+  border-bottom: 1px solid #ffffff; /* White bottom border */
+  border-left: none; /* No left border */
+  border-radius: 0 10px 10px 0; /* Rounded edges on the top right and bottom right corners */
+  z-index: 1001; /* A value higher than the z-index of the carousel */
+}
 
-  .training-info {
-    text-align: center;
-    padding-top: 40px;
-    margin-bottom: 0; /* Remove bottom margin */
-  }
-  
-  .training-info p {
-    margin: 10px 0; /* Adjust this value to change the spacing between paragraphs */
-    margin-bottom: 0;
-  }
+.social-icon {
+  display: block;
+  width: 40px; /* Adjust the width of the icons */
+  height: auto; /* Maintain aspect ratio */
+  margin: 9px 0;
+  margin-bottom: 10px; /* Add some spacing between the icons */
+}
 
-  .training-section {
-    text-align: center;
-    padding-top: 60px;
-  }
-  
-  .training-section .content-container {
-    width: 80%; /* Set the width to 80% of the parent container */
-    margin: 0 auto; /* Center the container */
-  }
-  
-  .training-section p {
-    margin: 10px 0; /* Adjust this value to change the spacing between paragraphs */
-  }
+.facebook-icon {
+  width: 40px; /* Adjust this value to match the size of the Instagram icon */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 1px;
+}
 
-  .training-times {
-    margin-bottom: -40px; /* Adjust this value to reduce or increase the space */
-  }
-  
-  .training-section h2 {
-    margin-top: 0; /* Remove top margin to bring the title closer */
-  }
+.home {
+  margin-top: 80px; /* Equal to the height of the nav-bar */
+}
 
-  .juniors-section {
-    text-align: center;
-    padding-top: 60px; /* Adjust the padding to create the desired space between sections */
-    color: #ffffff; /* White text color */
-  }
-  
-  .juniors-picture, .fixtures-picture {
-    width: 100%;
-    margin: 10px auto;
-    margin-bottom: 10px; /* Reduce this value to bring the picture closer to the title */
-  }
-  
-  .juniors-section h2 { /* Updated to h2 since the title is an h2 element */
-    font-size: 24px; /* Adjust the font size of the title */
-    margin-top: 0px;
-    margin-bottom: 0px; /* Remove the bottom margin to match the TEAM section */
-  }
-  
-  .juniors-section .content-container p {
-    font-size: 15px; /* Adjust the font size of the paragraph */
-    max-width: 400px; /* Set a maximum width to control the line length */
-    margin: 0 auto; /* Center the paragraph if it's narrower than the max-width */
-  }
+.home-section {
+  text-align: center; /* Center the content */
+  padding: 0px; /* Add some padding */
+  background-color: #000000; /* Match the background color with the rest of the site */
+  color: #ffffff; /* White text color */
+}
 
-  .fixtures-section {
-    text-align: center;
-    padding-top: 40px; /* Adjust the padding to create the desired space between sections */
-    color: #ffffff; /* White text color */
-  }
+.home-title {
+  font-size: 40px; /* Adjust the font size of the title */
+  margin: 5px 0; /* Add some margin around the title */
+}
 
-  .fixtures-subtitle {
-    text-align: center;
-    margin: 5px 0;
-  }
-  
-  .fixtures-text {
-    text-align: center;
-    max-width: 400px;
-    margin: 10px auto;
-    font-size: 15px;
-  }
-  
-  .media-section {
-    text-align: center;
-    padding: 30px 0; /* Adjust the padding to create the desired space between sections */
-    color: #ffffff; /* White text color */
-  }
-  
-  .media-title {
-    font-size: 24px; /* Adjust the font size of the title */
-    margin: 5px 0; /* Add some margin around the title */
-      margin-bottom: 20px; /* Adjust this value to create the desired space */
-  }
+.home-paragraph {
+  font-size: 15px; /* Adjust the font size of the paragraph */
+  max-width: 400px; /* Set a maximum width to control the line length */
+  margin: 0 auto; /* Center the paragraph if it's narrower than the max-width */
+}
 
-  .media-icons {
-    display: flex;
-    justify-content: center; /* Align the icons in the center */
-    width: auto; /* Auto width to contain the icons */
-    margin: 20px auto; /* This centers the container and adds some margin above and below */
+.content-container {
+  width: 80%; /* Set the width to 80% of the parent container */
+  margin: 0 auto; /* Center the container */
+}
+
+.about-us-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2e8b57; /* Sea green color */
+  color: #fff; /* White text */
+  border: 2px solid #2e8b57; /* Sea green border */
+  border-radius: 10px; /* Rounded border */
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition for color change */
+  margin-top: 15px; /* Add space above the button */
+}
+
+.about-us-btn:hover {
+  background-color: #fff; /* White background on hover */
+  color: #2e8b57; /* Sea green text on hover */
+}
+
+.news-section {
+  padding-top: 40px; /* Equal to the height of the nav-bar */
+}
+
+.news-title {
+  text-align: center; /* Center the news title */
+  margin-bottom: 20px; /* Add space below the title */
+}
+
+.news-item {
+  margin-bottom: 20px; /* Space between news items */
+}
+
+.news-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit; /* Use the same color as the surrounding text */
+}
+
+.news-icon {
+  width: 40px; /* Adjust icon size */
+  margin-right: 10px; /* Space between icon and name */
+}
+
+.news-name {
+  margin-right: 10px; /* Space between name and picture */
+}
+
+.article-picture {
+  width: 100px; /* Adjust picture size */
+  height: 60px; /* Set the desired height */
+  border-radius: 10px; /* Rounded border */
+  object-fit: cover; /* Maintain aspect ratio without distortion */
+}
+
+.team-section {
+  text-align: center;
+  padding-top: 60px; /* Equal to the height of the nav-bar */
+}
+
+.team-section h2 {
+  margin-top: 0px; /* Reduce this value to bring the title closer to the picture */
+  margin-bottom: 0px; /* Adjust this value to bring the Forwards and Backs closer to the title */
+}
+
+.team-picture {
+  width: 100%;
+  max-width: 800px; /* Adjust based on your preferred size */
+  margin: 10px auto;
+  margin-bottom: 10px; /* Reduce this value to bring the picture closer to the title */
+}
+
+.roster {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.forwards,
+.backs {
+  width: 40%; /* Adjust based on your preferred size */
+}
+
+.forwards p,
+.backs p {
+  margin: 3px 0; /* Adjust this value to change the spacing between names */
+}
+
+.coaches {
+  margin-top: 20px;
+}
+
+.coaches p {
+  margin: 3px 0; /* Adjust this value to match the spacing between the names in the forwards and backs */
+}
+
+.training-section {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.training-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.juniors,
+.mens-team {
+  width: 40%; /* Adjust based on your preferred size */
+  margin: 10px 0;
+}
+
+.juniors h3,
+.mens-team h3 {
+  margin: 0;
+}
+
+.juniors p,
+.mens-team p {
+  margin: 3px 0; /* Adjust this value to change the spacing between lines */
+}
+
+.training-info {
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+.training-info p {
+  margin: 10px 0; /* Adjust this value to change the spacing between paragraphs */
+  margin-bottom: 0;
+}
+
+.training-section {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.training-section .content-container {
+  width: 80%; /* Set the width to 80% of the parent container */
+  margin: 0 auto; /* Center the container */
+}
+
+.training-section p {
+  margin: 10px 0; /* Adjust this value to change the spacing between paragraphs */
+}
+
+.training-times {
+  margin-bottom: -40px; /* Adjust this value to reduce or increase the space */
+}
+
+.training-section h2 {
+  margin-top: 0; /* Remove top margin to bring the title closer */
+}
+
+.juniors-section {
+  text-align: center;
+  padding-top: 60px; /* Adjust the padding to create the desired space between sections */
+  color: #ffffff; /* White text color */
+}
+
+.juniors-picture,
+.fixtures-picture {
+  width: 100%;
+  margin: 10px auto;
+  margin-bottom: 10px; /* Reduce this value to bring the picture closer to the title */
+}
+
+.juniors-section h2 {
+  /* Updated to h2 since the title is an h2 element */
+  font-size: 24px; /* Adjust the font size of the title */
+  margin-top: 0px;
+  margin-bottom: 0px; /* Remove the bottom margin to match the TEAM section */
+}
+
+.juniors-section .content-container p {
+  font-size: 15px; /* Adjust the font size of the paragraph */
+  max-width: 400px; /* Set a maximum width to control the line length */
+  margin: 0 auto; /* Center the paragraph if it's narrower than the max-width */
+}
+
+.fixtures-section {
+  text-align: center;
+  padding-top: 60px; /* Adjust the padding to create the desired space between sections */
+  color: #ffffff; /* White text color */
+}
+
+.fixtures-subtitle {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.fixtures-text {
+  text-align: center;
+  max-width: 400px;
+  margin: 10px auto;
+  font-size: 15px;
+}
+
+.media-section {
+  text-align: center;
+  padding: 30px 0; /* Adjust the padding to create the desired space between sections */
+  color: #ffffff; /* White text color */
+}
+
+.media-title {
+  font-size: 24px; /* Adjust the font size of the title */
+  margin: 5px 0; /* Add some margin around the title */
+  margin-bottom: 20px; /* Adjust this value to create the desired space */
+}
+
+.media-icons {
+  display: flex;
+  justify-content: center; /* Align the icons in the center */
+  width: auto; /* Auto width to contain the icons */
+  margin: 20px auto; /* This centers the container and adds some margin above and below */
 }
 
 .media-icon {
-  width: 60px;  /* Adjust as per your needs */
+  width: 60px; /* Adjust as per your needs */
   height: 60px; /* Adjust to match your desired aspect ratio */
   object-fit: cover; /* Keeps the image aspect ratio */
   margin: 0 10px; /* Space between images */
@@ -443,21 +449,19 @@ body {
 }
 
 .media-icon:hover {
-    transform: scale(1.1); /* Optional: Slightly enlarge the icon on hover */
+  transform: scale(1.1); /* Optional: Slightly enlarge the icon on hover */
 }
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+.sponsor-images {
+  display: flex;
+  flex-direction: column; /* Align the images vertically */
+  justify-content: space-between; /* Evenly space the images */
+  align-items: center; /* Center the images horizontally */
+  margin-top: 20px; /* Add space above the images */
+}
 
-  
-  
-  
+.sponsor-image {
+  width: 80%; /* Adjust based on your preferred size */
+  max-width: 200px; /* Set a maximum width if needed */
+  margin: 10px 0; /* Add some space above and below each image */
+}
