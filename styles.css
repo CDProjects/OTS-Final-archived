@@ -165,7 +165,7 @@ body {
     left: 0;
     transform: translateY(-50%);
     background-color: #000;
-    padding: 1px 4px; 
+    padding: 1px 2px; 
     border-top: 1px solid #ffffff; /* White top border */
     border-right: 1px solid #ffffff; /* White right border */
     border-bottom: 1px solid #ffffff; /* White bottom border */
@@ -308,6 +308,64 @@ body {
   .coaches p {
     margin: 3px 0; /* Adjust this value to match the spacing between the names in the forwards and backs */
   }
+  
+  .training-section {
+    text-align: center;
+    padding: 60px 0;
+  }
+  
+  .training-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .juniors, .mens-team {
+    width: 40%; /* Adjust based on your preferred size */
+    margin: 10px 0;
+  }
+  
+  .juniors h3, .mens-team h3 {
+    margin: 0;
+  }
+  
+  .juniors p, .mens-team p {
+    margin: 3px 0; /* Adjust this value to change the spacing between lines */
+  }
+
+  .training-info {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .training-info p {
+    margin: 10px 0; /* Adjust this value to change the spacing between paragraphs */
+  }
+
+  .training-section {
+    text-align: center;
+    padding: 20px 0;
+    padding-top: 60px;
+  }
+  
+  .training-section .content-container {
+    width: 80%; /* Set the width to 80% of the parent container */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .training-section p {
+    margin: 10px 0; /* Adjust this value to change the spacing between paragraphs */
+  }
+
+  .training-times {
+    margin-bottom: -40px; /* Adjust this value to reduce or increase the space */
+  }
+  
+  .training-section h2 {
+    margin-top: 0; /* Remove top margin to bring the title closer */
+  }
+  
+  
   
   
   

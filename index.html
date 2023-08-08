@@ -13,13 +13,14 @@
     <title>Old Town Shamrocks</title>
   </head>
   <body>
+    <!-- Fixed nav bar and hamburger menu -->
     <div class="nav-bar">
       <div class="sub-menus" onclick="toggleMenu()">
         <ul>
           <li><a href="#home" id="home-link">HOME</a></li>
           <li><a href="#news-section">NEWS</a></li>
           <li><a href="#team-section">TEAM</a></li>
-          <li><a href="#training">TRAINING</a></li>
+          <li><a href="#training-section">TRAINING</a></li>
           <li><a href="#juniors">JUNIORS</a></li>
           <li><a href="#fixtures">FIXTURES</a></li>
           <li><a href="#media">MEDIA</a></li>
@@ -59,8 +60,11 @@
           class="social-icon"
         />
       </a>
+      <a href="https://www.youtube.com/YourChannel" target="_blank">
+        <img src="Images/YT White Icon.png" alt="YouTube" class="social-icon" />
+      </a>
     </div>
-
+    <!-- Home section -->
     <section id="home" class="home">
       <div class="carousel">
         <div class="carousel-item active">
@@ -214,9 +218,14 @@
         </a>
       </div>
     </section>
+    <!-- Team section -->
     <section id="team-section" class="team-section">
       <h1>TEAM</h1>
-      <img src="Images/Team Roster.jpg" alt="Team Picture" class="team-picture">
+      <img
+        src="Images/Team Roster.jpg"
+        alt="Team Picture"
+        class="team-picture"
+      />
       <h2>2023 Team Roster</h2>
       <div class="roster content-container">
         <div class="forwards">
@@ -251,7 +260,7 @@
           <p>CURTIS POLLARD</p>
           <p>JARKKO TUORESMÄKI</p>
           <p>TARAS LIUSH</p>
-          <p>WIREMU RAHUI </p>
+          <p>WIREMU RAHUI</p>
           <p>DANIEL KERR</p>
           <p>JURI PODSCHIVALOW</p>
           <p>RAINE HIRVISAARI</p>
@@ -268,7 +277,49 @@
         <p>MARKO SALLERT, <strong>FORWARDS COACH</strong></p>
       </div>
     </section>
-    
+    <!-- Training sidebar -->
+    <div class="training-times">
+    <section id="training-section" class="training-section content-containe">
+      <h1>TRAINING</h1>
+      <div class="training-container content-container">
+        <div class="juniors">
+          <h3>Juniors</h3>
+          <p>TUESDAYS 18:00-19:30 @ HAMARI</p>
+        </div>
+        <div class="mens-team">
+          <h3>Mens</h3>
+          <p>TUESDAYS 19:00-20:30 @ HAMARI</p>
+          <p>THURSDAYS 19:00-20:30 @ KOKONNIEMI</p>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="training-info">
+      <h3 class="content-container">Miesten treeniajat</h3>
+      <div class="content-container">
+        <p>
+          Miesten Preseason on päättynyt ja kauden 2023 haasteisiin ollaan
+          valmistauduttu uudistuneen valmennuksen johtamana. Vielä mahtuu
+          uusiakin mukaan ja tutustumaan lajiin. Joten jos on urheiluintoa sekä
+          tahtoa kokeilla uutta ja mielenkiintoista lajia liity ihmeessä mukaan.
+          Ota mukaan vain pirteä asenne ja nappikset. Jos olet kiinnostunut
+          liittymään, ota yhteyttä numeroon +358408655733
+        </p>
+        <p>
+          Juniori rugbyä on jatkettu. Otamme avoimin käsin vastaan kaikki nuoret
+          ja lajista kiinnostuneet mukaan. Juniorimme ovat päässeet pelaamaan jo
+          muutamia pelejä. Suomen Rugby Liitto kaavailee junioreille omaa sarjaa
+          vuodelle 2024. Jos olet kiinnostunut, otathan yhteyttä suomeksi
+          numeroon +358408326626 Juniori koordinaattori/valmentaja ja ruotsiksi
+          +358401930772 apuvalmentaja.
+        </p>
+        <p>Aikuisten treeni ajat.</p>
+        <p>
+          Miehet treenaavat tiistaisin hamarissa Klo 19-20 30<br />
+          ja torstaisin Kokon nurmella Klo 19-20 30
+        </p>
+      </div>
+    </section>
     <script src="scripts.js"></script>
   </body>
 </html>
