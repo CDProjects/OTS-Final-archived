@@ -42,18 +42,3 @@ document.addEventListener('DOMContentLoaded', () => {
   setInterval(carouselCycle, 3000);
 });
 
-window.addEventListener('scroll', function () {
-  var mediaSection = document.getElementById('media-section');
-  var sideNavBar = document.getElementById('side-nav-bar'); // Replace with your side nav bar's ID or class
-
-  var rect = mediaSection.getBoundingClientRect();
-
-  if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-    // Inside the MEDIA section, hide the side nav bar
-    sideNavBar.style.display = 'none';
-  } else {
-    // Outside the MEDIA section, show the side nav bar
-    sideNavBar.style.display = 'block';
-  }
-});
-
