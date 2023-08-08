@@ -20,7 +20,6 @@ document.getElementById('home-link').addEventListener('click', function(e) {
   window.scrollTo(0, 0); // Scroll to the top of the page
 });
 
-
 document.addEventListener('DOMContentLoaded', () => {
   // Preload images
   const images = ['Images/Akseli Peltoniemi.png', 'Images/Alejandro Ruiz.png'];
@@ -42,3 +41,19 @@ document.addEventListener('DOMContentLoaded', () => {
   // Cycle through images every 3 seconds
   setInterval(carouselCycle, 3000);
 });
+
+window.addEventListener('scroll', function () {
+  var mediaSection = document.getElementById('media-section');
+  var sideNavBar = document.getElementById('side-nav-bar'); // Replace with your side nav bar's ID or class
+
+  var rect = mediaSection.getBoundingClientRect();
+
+  if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+    // Inside the MEDIA section, hide the side nav bar
+    sideNavBar.style.display = 'none';
+  } else {
+    // Outside the MEDIA section, show the side nav bar
+    sideNavBar.style.display = 'block';
+  }
+});
+
