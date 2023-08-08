@@ -465,3 +465,71 @@ body {
   max-width: 200px; /* Set a maximum width if needed */
   margin: 10px 0; /* Add some space above and below each image */
 }
+
+.contact-section {
+  text-align: center;
+  padding: 60px 0; /* Adjust the padding to create the desired space between sections */
+  color: #ffffff; /* White text color */
+}
+
+.contact-section h1 {
+  font-size: 24px; /* Adjust the font size of the title */
+  margin: 5px 0; /* Add some margin around the title */
+}
+
+.contact-section p {
+  font-size: 15px; /* Adjust the font size of the paragraph */
+  max-width: 400px; /* Set a maximum width to control the line length */
+  margin: 0 auto; /* Center the paragraph if it's narrower than the max-width */
+}
+
+.footer {
+  background-color: #000; /* Match the background color with the rest of the site */
+  color: #fff; /* White text color */
+  padding: 20px 0; /* Adjust the padding for the footer */
+  text-align: center; /* Center the text */
+}
+
+#contact-form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+label {
+  flex: 0 0 60px; /* Reduce the width to bring the fields closer */
+  font-weight: bold;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  margin-left: -30px; /* Add negative margin to bring the fields closer */
+}
+
+.input-wrapper {
+  flex: 1;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-btn {
+  display: block;
+  margin: 20px auto;
+}
