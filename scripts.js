@@ -20,7 +20,7 @@ document.getElementById("home-link").addEventListener("click", function (e) {
   window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top of the page
 });
 
-// Smooth scrolling
+// Smooth scrolling for each sub menu
 function smoothScrollToSection(linkId, sectionId) {
   document.getElementById(linkId).addEventListener("click", function (e) {
     e.preventDefault();
