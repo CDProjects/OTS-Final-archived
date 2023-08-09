@@ -621,12 +621,13 @@ body {
   .contact-info h4 {
     margin: 5px 0; /* Adjust the margin as needed */
   }
+}
 
   @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     /* Hide small device navigation */
-    .nav-bar-small {
-      display: none;
-    }
+    .nav-bar {
+    display: none;
+  }
 
     /* Display medium device navigation */
     .nav-bar-medium {
@@ -655,4 +656,4 @@ body {
       align-items: center;
     }
   }
-}
+
