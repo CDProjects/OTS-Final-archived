@@ -493,59 +493,18 @@ body {
   margin: 0 auto; /* Center the paragraph if it's narrower than the max-width */
 }
 
+.contact-info {
+  margin-top: 20px; /* Space above the contact information */
+}
+
+.contact-info p {
+  margin: 5px 0; /* Space between lines */
+  color: #ffffff; /* White text color (adjust as needed) */
+}
+
 .footer {
   background-color: #000; /* Match the background color with the rest of the site */
   color: #fff; /* White text color */
   padding: 20px 0; /* Adjust the padding for the footer */
   text-align: center; /* Center the text */
-}
-
-.form-container {
-  padding-top: 30px; /* Adjust the value to create the desired space */
-}
-
-#contact-form {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.form-group {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-label {
-  flex: 0 0 60px; /* Reduce the width to bring the fields closer */
-  font-weight: bold;
-  text-align: left;
-}
-
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
-  margin-left: -30px; /* Add negative margin to bring the fields closer */
-}
-
-.input-wrapper {
-  flex: 1;
-}
-
-input,
-select,
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-
-.submit-btn {
-  display: block;
-  margin: 20px auto;
 }
