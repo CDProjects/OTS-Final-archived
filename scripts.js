@@ -14,19 +14,30 @@ function toggleMenu() {
 
   hamburgerMenu.classList.toggle("active");
 }
- // HOME sub menu scroll to bottom of page
+// HOME sub menu scroll to top of page
 document.getElementById("home-link").addEventListener("click", function (e) {
   e.preventDefault(); // Prevent the default behavior
-  window.scrollTo(0, 0); // Scroll to the top of the page
+  window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top of the page
 });
 
-  // CONTACT sub menu scroll to bottom of page
-  document.getElementById('contact-link').addEventListener('click', function(e) {
+// Smooth scrolling
+function smoothScrollToSection(linkId, sectionId) {
+  document.getElementById(linkId).addEventListener("click", function (e) {
     e.preventDefault();
-    var contactSection = document.getElementById('contact-section');
-    contactSection.scrollIntoView({ behavior: 'smooth' });
+    var section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: "smooth" });
   });
-  
+}
+
+// Apply the smooth scrolling to each sub-menu link
+smoothScrollToSection("news-link", "news-section");
+smoothScrollToSection("team-link", "team-section");
+smoothScrollToSection("training-link", "training-section");
+smoothScrollToSection("juniors-link", "juniors-section");
+smoothScrollToSection("fixtures-link", "fixtures-section");
+smoothScrollToSection("media-link", "media-section");
+smoothScrollToSection("contact-link", "contact-section");
+
 document.addEventListener("DOMContentLoaded", () => {
   // Preload images
   const images = ["Images/Akseli Peltoniemi.png", "Images/Alejandro Ruiz.png"];
@@ -47,5 +58,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Cycle through images every 3 seconds
   setInterval(carouselCycle, 3000);
-
 });
