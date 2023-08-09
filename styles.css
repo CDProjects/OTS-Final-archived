@@ -55,10 +55,6 @@ body {
   white-space: nowrap; /* Prevent the text from wrapping to the next line */
 }
 
-.medium-device-content {
-  display: none; /* Hide by default */
-}
-
 .icon-burger {
   display: flex; /* Change this to flex or block to make the icon visible */
   flex-direction: column; /* Align the lines vertically */
@@ -627,20 +623,20 @@ body {
   }
 
   @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
-    /* Custom styles for medium devices in portrait orientation */
-    .nav-bar,
-    .icon-burger {
+    /* Hide small device navigation */
+    .nav-bar-small {
       display: none;
     }
 
-    /* Display medium device content */
-    .medium-device-content {
+    /* Display medium device navigation */
+    .nav-bar-medium {
       display: block;
     }
 
     .nav-bar-medium ul {
       display: flex;
       justify-content: space-evenly;
+      list-style: none; /* Remove bullets */
       padding: 0;
       margin: 0;
     }
@@ -650,7 +646,7 @@ body {
     }
 
     .home-image-medium {
-      width: 160px;
+      width: 1px; /* Adjust the size of the logo */
       height: auto;
     }
 
