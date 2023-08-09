@@ -497,9 +497,8 @@ body {
   margin-top: 20px; /* Space above the contact information */
 }
 
-.contact-info p {
-  margin: 5px 0; /* Space between lines */
-  color: #ffffff; /* White text color (adjust as needed) */
+.contact-info h4 {
+  margin: 5px 0; /* Adjust the margin as needed */
 }
 
 .contact-image {
@@ -557,21 +556,21 @@ body {
   .carousel-container {
     height: 300px; /* Set a fixed height for the carousel container */
   }
-  
+
   .carousel img {
     width: 100%; /* Make sure the image fits within the container */
     height: auto; /* Maintain the image's aspect ratio */
     position: relative; /* Remove absolute positioning */
     transform: none; /* Remove any transformations */
   }
-  
+
   .home {
     margin-top: 0; /* Remove the additional margin */
   }
-  
+
   .home-section {
     padding-top: -60px; /* Adjust this value to reduce the space */
-  } 
+  }
 
   /* Adjusting the home section */
   .home-title {
@@ -591,7 +590,7 @@ body {
   .news-section .news-icon {
     width: 60px; /* Adjust the size as needed */
     height: 60px;
-  } 
+  }
 
   /* Adjusting the team section */
   .team-section .team-members {
@@ -619,7 +618,7 @@ body {
     flex-direction: row;
   }
 
-  .contact-info p {
-    text-align: center;
-}
+  .contact-info h4 {
+    margin: 5px 0; /* Adjust the margin as needed */
+  }
 }
