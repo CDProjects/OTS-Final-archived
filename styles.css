@@ -55,6 +55,10 @@ body {
   white-space: nowrap; /* Prevent the text from wrapping to the next line */
 }
 
+.medium-device-content {
+  display: none;
+}
+
 .icon-burger {
   display: flex; /* Change this to flex or block to make the icon visible */
   flex-direction: column; /* Align the lines vertically */
@@ -168,7 +172,7 @@ body {
 
 .fixed-sidebar {
   position: fixed;
-  top: 20%;
+  top: 30%;
   left: 0;
   transform: translateY(-50%);
   background-color: #000;
@@ -195,7 +199,7 @@ body {
   margin-right: 1px;
 }
 
-.home {
+.home-section {
   margin-top: 80px; /* Equal to the height of the nav-bar */
 }
 
@@ -620,5 +624,32 @@ body {
 
   .contact-info h4 {
     margin: 5px 0; /* Adjust the margin as needed */
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+    /* Custom styles for medium devices in portrait orientation */
+
+    /* Hide the burger icon */
+    .icon-burger {
+      display: none;
+    }
+
+    /* Display the sub-menus in the nav-bar, spaced evenly */
+    .nav-bar .nav-menu {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-bar .sub-menus ul li {
+      list-style: none;
+    }
+
+    .medium-device-content {
+      display: block;
+      /* Additional styling if needed */
+    }
   }
 }
