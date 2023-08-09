@@ -56,7 +56,7 @@ body {
 }
 
 .medium-device-content {
-  display: none;
+  display: none; /* Hide by default */
 }
 
 .icon-burger {
@@ -628,28 +628,35 @@ body {
 
   @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     /* Custom styles for medium devices in portrait orientation */
-
-    /* Hide the burger icon */
+    .nav-bar,
     .icon-burger {
       display: none;
     }
 
-    /* Display the sub-menus in the nav-bar, spaced evenly */
-    .nav-bar .nav-menu {
+    /* Display medium device content */
+    .medium-device-content {
+      display: block;
+    }
+
+    .nav-bar-medium ul {
       display: flex;
       justify-content: space-evenly;
-      flex-direction: row;
       padding: 0;
       margin: 0;
     }
 
-    .nav-bar .sub-menus ul li {
+    .nav-bar-medium ul li {
       list-style: none;
     }
 
-    .medium-device-content {
-      display: block;
-      /* Additional styling if needed */
+    .home-image-medium {
+      width: 160px;
+      height: auto;
+    }
+
+    .home-club-medium {
+      display: flex;
+      align-items: center;
     }
   }
 }
