@@ -514,3 +514,107 @@ body {
   padding: 20px 0; /* Adjust the padding for the footer */
   text-align: center; /* Center the text */
 }
+
+@media screen and (min-width: 576px) and (orientation: landscape) {
+  /* Adjusting the body and container */
+  body {
+    font-size: 16px;
+    padding-top: 70px; /* Adjust based on the height of your navigation bar */
+  }
+
+  /* Center side barvertically */
+  .fixed-sidebar {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* Sub menus into 2 columns */
+  .sub-menus ul {
+    display: grid; /* Use CSS Grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Create 2 equal-width columns */
+    grid-gap: 8px; /* Space between grid items */
+  }
+
+  .sub-menus ul li {
+    text-align: center; /* Center the text */
+  }
+
+  /* Adjusting the navigation bar */
+  .nav-bar {
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: left; /* Center items horizontally */
+    flex-direction: row; /* Set the direction to row */
+  }
+  .nav-bar .logo img {
+    height: 40px;
+  }
+  .nav-bar .icon-burger {
+    font-size: 30px;
+  }
+
+  .home {
+    margin-top: 60px; /* Adjust to the height of your nav-bar */
+  }
+
+  .carousel-item {
+    width: 100%;
+    height: 250px; /* Adjust this height according to your preference */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Adjusting the home section */
+  .home-section {
+    padding: 40px 0;
+  }
+
+  /* Adjusting the news section */
+  .news-section .news-item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .news-section .news-item img {
+    width: 40%;
+    margin-right: 20px;
+  }
+
+  /* Adjusting the team section */
+  .team-section .team-members {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Adjusting the training section */
+  .training-section .training-details {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .training-section .training-details img {
+    width: 40%;
+    margin-right: 20px;
+  }
+
+  /* Adjusting the fixtures section */
+  .fixtures-section .fixtures-details {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* Adjusting the media section */
+  .media-section .social-media-icons {
+    flex-direction: row;
+  }
+
+  /* Adjusting the contact section */
+  .contact-section .contact-form {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .contact-section .contact-form label,
+  .contact-section .contact-form input,
+  .contact-section .contact-form select,
+  .contact-section .contact-form textarea {
+    margin-right: 20px;
+  }
+}
