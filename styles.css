@@ -631,6 +631,7 @@ body {
 
     /* Display medium device navigation */
     .nav-bar-medium {
+      padding-top: 10px; /* Add space at the top */
       display: block;
     }
 
@@ -659,6 +660,10 @@ body {
     .home-club-medium {
       display: flex;
       align-items: center;
+    }
+
+    .home-section {
+      margin: 0; /* Margin removed from top of home-section */
     }
 
     .fixed-sidebar {
