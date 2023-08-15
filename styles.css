@@ -653,13 +653,18 @@ body {
     }
 
     .home-image-medium {
-      width: 160px; /* Adjust the size of the logo */
+      width: 100px; /* Adjust the size of the logo */
       height: auto;
     }
 
     .home-club-medium {
       display: flex;
       align-items: center;
+    }
+
+    .home-club-medium h1 a {
+      color: white; /* Set the font color to white */
+      text-decoration: none; /* Remove the underline */
     }
 
     .home-section {
