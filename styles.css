@@ -634,6 +634,11 @@ body {
       display: block;
     }
 
+    .nav-bar-medium a {
+      color: white; /* Set the font color to white */
+      text-decoration: none; /* Remove the underline */
+    }
+
     .nav-bar-medium ul {
       display: flex;
       justify-content: space-evenly;
@@ -647,13 +652,24 @@ body {
     }
 
     .home-image-medium {
-      width: 1px; /* Adjust the size of the logo */
+      width: 160px; /* Adjust the size of the logo */
       height: auto;
     }
 
     .home-club-medium {
       display: flex;
       align-items: center;
+    }
+
+    .fixed-sidebar {
+      display: none;
+    }
+
+    .carousel img {
+      max-width: 50%; /* Adjust the width of the images as needed */
+      height: auto; /* Maintain the aspect ratio */
+      display: block; /* Center the images */
+      margin: 0 auto;
     }
   }
 
