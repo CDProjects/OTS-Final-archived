@@ -662,9 +662,14 @@ body {
       align-items: center;
     }
 
+    .home-club-medium h1 {
+      font-size: 24px; /* Set the desired font size */
+    }
+
     .home-club-medium h1 a {
       color: white; /* Set the font color to white */
       text-decoration: none; /* Remove the underline */
+
     }
 
     .home-section {
