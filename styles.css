@@ -5,6 +5,11 @@ body {
   margin: 0;
 }
 
+.nav-bar-medium,
+.home-club-medium {
+  display: none;
+}
+
 .section-title {
   font-size: 24px; /* Example font size */
   margin-top: 0;
@@ -662,62 +667,9 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
-  /* Hide small device navigation */
-  .nav-bar {
-    display: none;
-  }
+/* View port for Medium devices Portrait */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 
-  /* Display medium device navigation */
-  .nav-bar-medium {
-    padding-top: 10px; /* Add space at the top */
-    display: block;
-  }
-
-  .nav-bar-medium a {
-    color: white; /* Set the font color to white */
-    text-decoration: none; /* Remove the underline */
-  }
-
-  .nav-bar-medium ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none; /* Remove bullets */
-    padding: 0;
-    margin: 0;
-  }
-
-  .nav-bar-medium ul li {
-    list-style: none;
-  }
-
-  .home-image-medium {
-    width: 100px; /* Adjust the size of the logo */
-    height: auto;
-  }
-
-  .home-club-medium {
-    display: flex;
-    align-items: center;
-  }
-
-  .home-club-medium h1 a {
-    color: white; /* Set the font color to white */
-    text-decoration: none; /* Remove the underline */
-  }
-
-  .home-section {
-    margin: 0; /* Margin removed from top of home-section */
-  }
-
-  .fixed-sidebar {
-    display: none;
-  }
-
-  .carousel img {
-    max-width: 50%; /* Adjust the width of the images as needed */
-    height: auto; /* Maintain the aspect ratio */
-    display: block; /* Center the images */
-    margin: 0 auto;
-  }
 }
+
+
