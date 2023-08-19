@@ -670,6 +670,44 @@ body {
 /* View port for Medium devices Portrait */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 
+   /* Hide small device navigation */
+   .nav-bar {
+    display: none;
+  }
+
+  /* Display medium device navigation */
+  .nav-bar-medium {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    /* ... other styles ... */
+  }
+
+  .nav-bar-medium ul {
+    display: flex;
+    justify-content: space-evenly; /* Distributes the items evenly */
+    list-style: none;  /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensures that the list takes up the full width of the container */
+  }
+
+.nav-bar-medium a {
+  color: white;
+  text-decoration: none;  /* Removes underlines */
+}
+
+  .home-club-medium {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .home-image-medium {
+    width: 100px; /* Adjust the size of the logo */
+    height: auto;
+  }
 }
 
 
