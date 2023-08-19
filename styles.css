@@ -669,9 +669,8 @@ body {
 
 /* View port for Medium devices Portrait */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-
-   /* Hide small device navigation */
-   .nav-bar {
+  /* Hide small device navigation */
+  .nav-bar {
     display: none;
   }
 
@@ -686,28 +685,53 @@ body {
   .nav-bar-medium ul {
     display: flex;
     justify-content: space-evenly; /* Distributes the items evenly */
-    list-style: none;  /* Removes bullet points */
+    list-style: none; /* Removes bullet points */
     padding: 0;
     margin: 0;
     width: 100%; /* Ensures that the list takes up the full width of the container */
   }
 
-.nav-bar-medium a {
-  color: white;
-  text-decoration: none;  /* Removes underlines */
-}
+  .nav-bar-medium a {
+    color: white;
+    text-decoration: none; /* Removes underlines */
+  }
+
+  .home-image-medium {
+    width: 120px; /* Adjust the size of the logo */
+    height: auto;
+  }
 
   .home-club-medium {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 10px;
+    width: 100%; /* Ensures the container takes the full width */
+    min-height: 80px; /* Adjust as needed */
   }
 
-  .home-image-medium {
-    width: 100px; /* Adjust the size of the logo */
-    height: auto;
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+    height: auto; /* This should allow the container to fit its content */
+    overflow: visible; /* In case any text is being hidden */
+  }
+
+  h1 {
+    font-size: 24px; /* Adjust as needed */
+    line-height: 1.2; /* Adjust as needed */
+    margin: 0;
+    padding: 0;
+  }
+
+  .subtitle {
+    font-size: 16px; /* Adjust as needed */
+    margin-top: 5px;
+  }
+
+  .home-section {
+    margin-top: 20px;
   }
 }
-
-
