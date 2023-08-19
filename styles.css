@@ -706,17 +706,15 @@ body {
     align-items: center;
     justify-content: flex-start;
     padding: 10px;
-    width: 100%; /* Ensures the container takes the full width */
-    min-height: 80px; /* Adjust as needed */
   }
 
   .title-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     margin-left: 10px;
     height: auto; /* This should allow the container to fit its content */
-    overflow: visible; /* In case any text is being hidden */
   }
 
   h1 {
@@ -724,14 +722,23 @@ body {
     line-height: 1.2; /* Adjust as needed */
     margin: 0;
     padding: 0;
+    margin-bottom: 60px; /* Adjust the space between the title and subtitle */
   }
 
   .subtitle {
     font-size: 16px; /* Adjust as needed */
-    margin-top: 5px;
+    margin-top: 0px;
   }
 
   .home-section {
-    margin-top: 20px;
+    margin-top: 0px;
+  }
+
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 700px; /* Adjust as needed */
+    overflow: hidden;
+    margin-top: 0; /* Remove negative margin */
   }
 }
