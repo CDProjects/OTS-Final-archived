@@ -12,7 +12,7 @@ body {
   /* Other styling properties as needed */
 }
 
-.nav-bar-small {
+.nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -623,91 +623,62 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
-  /* Hide small device navigation */
-  .nav-bar {
+  @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+    /* Hide small device navigation */
+    .nav-bar {
     display: none;
   }
 
-  /* Display medium device navigation */
-  .nav-bar-medium {
-    padding-top: 10px; /* Add space at the top */
-    display: block;
-  }
+    /* Display medium device navigation */
+    .nav-bar-medium {
+      padding-top: 10px; /* Add space at the top */
+      display: block;
+    }
 
-  .nav-bar-medium a {
-    color: white; /* Set the font color to white */
-    text-decoration: none; /* Remove the underline */
-  }
+    .nav-bar-medium a {
+      color: white; /* Set the font color to white */
+      text-decoration: none; /* Remove the underline */
+    }
 
-  .nav-bar-medium ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none; /* Remove bullets */
-    padding: 0;
-    margin: 0;
-  }
+    .nav-bar-medium ul {
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none; /* Remove bullets */
+      padding: 0;
+      margin: 0;
+    }
 
-  .nav-bar-medium ul li {
-    list-style: none;
-  }
+    .nav-bar-medium ul li {
+      list-style: none;
+    }
 
-  .home-image-medium {
-    width: 120px; /* Adjust the size of the logo */
-    height: auto;
-    padding-left: 27px;
-  }
+    .home-image-medium {
+      width: 100px; /* Adjust the size of the logo */
+      height: auto;
+    }
 
-  .home-club-medium {
-    position: relative; /* Establishes a point of reference for absolutely positioned children */
-  }
+    .home-club-medium {
+      display: flex;
+      align-items: center;
+    }
 
-  .home-club-medium img.home-image-medium {
-    position: absolute; /* Allows precise control over the logo's position */
-    left: 20px; /* Aligns the logo to the left of the container */
-    top: 50px; /* Moves the logo down by 50px, adjust as needed */
-  }
+    .home-club-medium h1 a {
+      color: white; /* Set the font color to white */
+      text-decoration: none; /* Remove the underline */
+    }
 
-  .home-club-medium div {
-    padding-left: 100px; /* Adds space to the left of the title and subtitle to accommodate the logo, adjust as needed */
-    padding-top: 35px; /* Moves the title and subtitle down to align with the logo, adjust as needed */
-  }
+    .home-section {
+      margin: 0; /* Margin removed from top of home-section */
+    }
 
-  .home-club-medium h1 {
-    font-size: 24px; /* Set the desired font size */
-  }
+    .fixed-sidebar {
+      display: none;
+    }
 
-  .home-club-medium h1 a {
-    color: white; /* Set the font color to white */
-    text-decoration: none; /* Remove the underline */
-    font-size: 30px;
+    .carousel img {
+      max-width: 50%; /* Adjust the width of the images as needed */
+      height: auto; /* Maintain the aspect ratio */
+      display: block; /* Center the images */
+      margin: 0 auto;
+    }
   }
-
-  .home-club-medium h1,
-  .home-club-medium h3 {
-    margin: 0; /* Remove any margin */
-    color: white; /* Set the color to white */
-  }
-
-  .home-section {
-    margin: 0; /* Margin removed from top of home-section */
-  }
-
-  .fixed-sidebar {
-    display: none;
-  }
-
-  .carousel {
-    position: relative;
-    max-width: 70%; /* Adjust the width of the carousel container */
-    margin-left: auto; /* Align the carousel to the right */
-    top: 0px; /* Move the carousel up */
-  }
-
-  .carousel img {
-    max-width: 100%; /* Adjust the width of the images as needed */
-    height: auto; /* Maintain the aspect ratio */
-    display: block; /* Center the images */
-    margin: 0 auto;
-  }
-}
