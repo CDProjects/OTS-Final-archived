@@ -722,7 +722,10 @@ body {
     line-height: 1.2; /* Adjust as needed */
     margin: 0;
     padding: 0;
-    margin-bottom: 60px; /* Adjust the space between the title and subtitle */
+  }
+
+  h2 {
+    margin-bottom: 0px;
   }
 
   .subtitle {
