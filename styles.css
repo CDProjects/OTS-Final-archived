@@ -707,7 +707,7 @@ body {
     justify-content: flex-start;
     padding: 10px;
     position: absolute;
-    top: 10%; /* Adjust this value to move the container down */
+    top: 6%; /* Adjust this value to move the container down */
     left: 6%; /* Adjust this value to move the container to the right */
     z-index: 10; /* Ensure it's above the carousel */
   }
@@ -748,7 +748,7 @@ body {
     width: 100%;
     height: 550px;
     overflow: hidden;
-    margin-top: -50px;
+    margin-top: 20px;
     margin-left: 300px;
 }
 
