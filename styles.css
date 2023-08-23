@@ -669,6 +669,11 @@ body {
 
 /* View port for Medium devices Portrait */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  /* Hide fixed side bar */
+  .fixed-sidebar {
+    display: none;
+  }
+
   /* Hide small device navigation */
   .nav-bar {
     display: none;
