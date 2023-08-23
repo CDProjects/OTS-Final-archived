@@ -679,6 +679,11 @@ body {
     display: flex;
     justify-content: center;
     padding: 10px;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* This ensures the navbar sticks to the top */
+    z-index: 1000; /* This ensures the navbar stays on top of other content */
+    background-color: black;
     /* ... other styles ... */
   }
 
