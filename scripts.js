@@ -59,3 +59,34 @@ document.addEventListener("DOMContentLoaded", () => {
   // Cycle through images every 3 seconds
   setInterval(carouselCycle, 3000);
 });
+
+// Select all navbar links
+// Select all navbar links
+const navLinks = document.querySelectorAll('.nav-bar-medium a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault(); // prevent the default jump-to-anchor behavior
+
+    const targetId = this.getAttribute('href'); // get the target id (e.g., "#home")
+    const targetElement = document.querySelector(targetId); // select the target element
+
+    const navbarHeight = document.querySelector('.nav-bar-medium').offsetHeight;
+    let positionToScrollTo = targetElement.offsetTop - navbarHeight;
+
+    // If it's not the home link, adjust the position to scroll to
+    if (targetId !== "#home") {
+      positionToScrollTo += 50; // This is an arbitrary value; adjust as needed
+    }
+
+    window.scrollTo({
+      top: positionToScrollTo,
+      behavior: 'smooth'
+    });
+  });
+});
+
+
+
+
+
