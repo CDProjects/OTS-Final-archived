@@ -85,8 +85,3 @@ navLinks.forEach(link => {
     });
   });
 });
-
-
-
-
-
