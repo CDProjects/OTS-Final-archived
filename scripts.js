@@ -61,7 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Select all navbar links
-// Select all navbar links
 const navLinks = document.querySelectorAll('.nav-bar-medium a');
 
 navLinks.forEach(link => {
