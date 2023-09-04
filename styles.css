@@ -756,19 +756,19 @@ body {
   }
 
   .home-title {
-    position: absolute;  /* or relative, depending on your design */
+    position: absolute; /* or relative, depending on your design */
     text-align: left;
-    top: 230px;  /* Adjust this to position the elements */
+    top: 230px; /* Adjust this to position the elements */
     left: 55px;
-    z-index: 11;  /* This ensures they are above the .home-club-medium element */
-}
+    z-index: 11; /* This ensures they are above the .home-club-medium element */
+  }
 
   .paragraph-container {
-    position: absolute;  /* or relative, depending on your design */
+    position: absolute; /* or relative, depending on your design */
     text-align: left;
-    top: 310px;  /* Adjust this to position the elements */
-    left: 55px;   
-    z-index: 11;  /* This ensures they are above the .home-club-medium element */
+    top: 310px; /* Adjust this to position the elements */
+    left: 55px;
+    z-index: 11; /* This ensures they are above the .home-club-medium element */
   }
 
   .carousel {
@@ -780,37 +780,77 @@ body {
     overflow: hidden;
     margin-top: 0px; /* Move the carousel up. Adjust this value as needed. */
     margin-left: 260px;
-}
+  }
 
-.carousel-item {
+  .carousel-item {
     height: 100%;
     width: auto;
-}
+  }
 
-.carousel-item img {
+  .carousel-item img {
     object-fit: cover;
     object-position: center;
+  }
+
+  .news-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This will center the child items horizontally */
+    justify-content: center; /* This will center the child items vertically */
+    text-align: center; /* This will center text inside the child elements */
+  }
+
+  .news-icon {
+    width: 60px;
+    margin-right: 40px; /* Adjust this value as needed */
+  }
+
+  .news-name {
+    font-size: 18px;
+  }
+
+  .article-picture {
+    margin-left: 40px; /* Adjust this value as needed */
+  }
 }
 
-.news-item {
-  display: flex;
-  flex-direction: column; 
-  align-items: center; /* This will center the child items horizontally */
-  justify-content: center; /* This will center the child items vertically */
-  text-align: center; /* This will center text inside the child elements */
-}
+/* View port for Medium devices landscape */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* Hide fixed side bar */
+  .fixed-sidebar {
+    display: none;
+  }
 
-.news-icon {
-  width: 60px;
-  margin-right: 40px; /* Adjust this value as needed */
-}
+  /* Hide small device navigation */
+  .nav-bar {
+    display: none;
+  }
 
-.news-name {
-  font-size: 18px;
-}
+  /* Display medium device navigation */
+  .nav-bar-medium {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* This ensures the navbar sticks to the top */
+    z-index: 1000; /* This ensures the navbar stays on top of other content */
+    background-color: black;
+    /* ... other styles ... */
+  }
 
-.article-picture {
-  margin-left: 40px; /* Adjust this value as needed */
-}
+  .nav-bar-medium ul {
+    display: flex;
+    justify-content: space-evenly; /* Distributes the items evenly */
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensures that the list takes up the full width of the container */
+  }
+
+  .nav-bar-medium a {
+    color: white;
+    text-decoration: none; /* Removes underlines */
+  }
 
 }
