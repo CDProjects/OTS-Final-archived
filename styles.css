@@ -767,7 +767,7 @@ body {
     position: absolute;  /* or relative, depending on your design */
     text-align: left;
     top: 310px;  /* Adjust this to position the elements */
-    left: 55px;   /* Adjust this to position the elements */
+    left: 55px;   
     z-index: 11;  /* This ensures they are above the .home-club-medium element */
   }
 
