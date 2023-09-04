@@ -800,4 +800,17 @@ body {
   text-align: center; /* This will center text inside the child elements */
 }
 
+.news-icon {
+  width: 60px;
+  margin-right: 40px; /* Adjust this value as needed */
+}
+
+.news-name {
+  font-size: 18px;
+}
+
+.article-picture {
+  margin-left: 40px; /* Adjust this value as needed */
+}
+
 }
