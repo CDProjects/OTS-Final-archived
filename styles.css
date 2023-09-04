@@ -767,7 +767,7 @@ body {
     position: absolute;  /* or relative, depending on your design */
     text-align: left;
     top: 310px;  /* Adjust this to position the elements */
-    left: 55px;
+    left: 55px;   /* Adjust this to position the elements */
     z-index: 11;  /* This ensures they are above the .home-club-medium element */
   }
 
@@ -778,7 +778,7 @@ body {
     width: 100%;
     height: 550px;
     overflow: hidden;
-    margin-top: 0px; /* Move the carousel up by 20 pixels. Adjust this value as needed. */
+    margin-top: 0px; /* Move the carousel up. Adjust this value as needed. */
     margin-left: 260px;
 }
 
@@ -790,6 +790,14 @@ body {
 .carousel-item img {
     object-fit: cover;
     object-position: center;
+}
+
+.news-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; /* This will center the child items horizontally */
+  justify-content: center; /* This will center the child items vertically */
+  text-align: center; /* This will center text inside the child elements */
 }
 
 }
