@@ -222,6 +222,10 @@ body {
   margin: 0 auto; /* Center the paragraph if it's narrower than the max-width */
 }
 
+.home-paragraph-medium {
+  display: none;
+}
+
 .content-container {
   width: 80%; /* Set the width to 80% of the parent container */
   margin: 0 auto; /* Center the container */
@@ -751,13 +755,21 @@ body {
     margin-top: 0px;
   }
 
-  .home-title, 
-.home-paragraph-container {
+  .home-title {
     position: absolute;  /* or relative, depending on your design */
-    top: 200px;  /* Adjust this to position the elements */
+    text-align: left;
+    top: 230px;  /* Adjust this to position the elements */
     left: 55px;
     z-index: 11;  /* This ensures they are above the .home-club-medium element */
 }
+
+  .paragraph-container {
+    position: absolute;  /* or relative, depending on your design */
+    text-align: left;
+    top: 310px;  /* Adjust this to position the elements */
+    left: 55px;
+    z-index: 11;  /* This ensures they are above the .home-club-medium element */
+  }
 
   .carousel {
     display: flex;
