@@ -751,6 +751,14 @@ body {
     margin-top: 0px;
   }
 
+  .home-title, 
+.home-paragraph-container {
+    position: absolute;  /* or relative, depending on your design */
+    top: 200px;  /* Adjust this to position the elements */
+    left: 55px;
+    z-index: 11;  /* This ensures they are above the .home-club-medium element */
+}
+
   .carousel {
     display: flex;
     align-items: center;
