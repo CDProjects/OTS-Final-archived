@@ -841,6 +841,7 @@ body {
 
   .nav-bar-medium ul {
     display: flex;
+    font-size: larger;
     justify-content: space-evenly; /* Distributes the items evenly */
     list-style: none; /* Removes bullet points */
     padding: 0;
@@ -851,6 +852,61 @@ body {
   .nav-bar-medium a {
     color: white;
     text-decoration: none; /* Removes underlines */
+  }
+
+  .home-image-medium {
+    width: 140px; /* Adjust the size of the logo */
+    height: auto;
+  }
+
+  .home-club-medium {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    position: absolute;
+    top: 15%; /* Adjust this value to move the container down */
+    left: 6.3%; /* Adjust this value to move the container to the right */
+    z-index: 100; /* Ensure it's above the carousel */
+  }
+
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 10px;
+    height: auto; /* This should allow the container to fit its content */
+  }
+  
+  h1 {
+    font-size: 24px; /* Adjust as needed */
+    line-height: 1.2; /* Adjust as needed */
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    margin-bottom: 0px;
+  }
+
+  .paragraph-container {
+    position: absolute; /* or relative, depending on your design */
+    text-align: left;
+    top: 310px; /* Adjust this to position the elements */
+    left: 83px;
+    z-index: 11; /* This ensures they are above the .home-club-medium element */
+  }
+
+  .carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    margin-top: 0px; /* Move the carousel up. Adjust this value as needed. */
+    margin-left: 260px;
   }
 
 }
