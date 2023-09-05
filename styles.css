@@ -892,13 +892,22 @@ body {
   }
 
   h2 {
+    font-size: 20px;
     margin-bottom: 0px;
+  }
+
+  .home-title {
+    position: absolute; /* or relative, depending on your design */
+    text-align: left;
+    top: 230px; /* Adjust this to position the elements */
+    left: 55px;
+    z-index: 11; /* This ensures they are above the .home-club-medium element */
   }
 
   .paragraph-container {
     position: absolute; /* or relative, depending on your design */
     text-align: left;
-    top: 310px; /* Adjust this to position the elements */
+    top: 360px; /* Adjust this to position the elements */
     left: 83px;
     z-index: 11; /* This ensures they are above the .home-club-medium element */
   }
