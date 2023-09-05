@@ -900,16 +900,20 @@ body {
     position: absolute; /* or relative, depending on your design */
     text-align: left;
     top: 230px; /* Adjust this to position the elements */
-    left: 55px;
+    left: 75px;
     z-index: 11; /* This ensures they are above the .home-club-medium element */
   }
 
   .paragraph-container {
     position: absolute; /* or relative, depending on your design */
     text-align: left;
-    top: 360px; /* Adjust this to position the elements */
-    left: 83px;
+    top: 400px; /* Adjust this to position the elements */
+    left: 75px;
     z-index: 11; /* This ensures they are above the .home-club-medium element */
+  }
+
+  .home-paragraph {
+    font-size: 20px;
   }
 
   .carousel {
