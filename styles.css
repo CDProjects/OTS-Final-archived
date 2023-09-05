@@ -876,6 +876,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     margin-left: 10px;
+    width: auto;  /* Ensure the container takes as much width as needed */
     height: auto; /* This should allow the container to fit its content */
   }
   
@@ -885,6 +886,9 @@ body {
     margin: 0;
     padding: 0;
     margin-bottom: -15px;
+    overflow: visible;  /* Allow the text to flow naturally */
+    text-overflow: clip;  /* If overflow happens, clip it without the ellipsis */
+    white-space: nowrap; /* Keep the text on one line */
   }
 
   h2 {
