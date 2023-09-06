@@ -1,7 +1,7 @@
 body {
-  background-color: #000000;
+  background-color: #000000; /* Set the background color */
   color: white;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif; /* Set the font type */
   margin: 0;
 }
 
@@ -11,28 +11,28 @@ body {
 }
 
 .section-title {
-  font-size: 24px; /* Example font size */
+  font-size: 24px; /* Example font size */ /* Define the font size */
   margin-top: 0;
   margin-bottom: 0;
   /* Other styling properties as needed */
 }
 
 .nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex; /* Set layout to flexbox */
+  justify-content: space-between; /* Horizontal alignment in flexbox */
+  align-items: center; /* Vertical alignment in flexbox */
   padding-right: 0px; /* Adjust padding to reduce nav-bar height */
   position: fixed;
   width: 100%;
-  background-color: #000000;
+  background-color: #000000; /* Set the background color */
   height: 60px; /* You can set the desired height here */
   top: 0; /* Ensure the nav-bar sticks to the top of the viewport */
   z-index: 1001; /* Ensures the nav-bar stays on top of other elements */
 }
 
 .logo-title {
-  display: flex;
-  align-items: center;
+  display: flex; /* Set layout to flexbox */
+  align-items: center; /* Vertical alignment in flexbox */
   padding-top: 0px;
   margin-left: 4%; /* Adjust this value to match the spacing of the icon-burger */
 }
@@ -47,13 +47,13 @@ body {
   width: 191.017px; /* Set the width of the title container */
   height: 36px; /* Set the height of the title container */
   font-weight: bold; /* Make the title text strong */
-  display: flex; /* Use flex to center the text within the container */
-  align-items: center; /* Center text vertically */
+  display: flex; /* Use flex to center the text within the container */ /* Set layout to flexbox */
+  align-items: center; /* Center text vertically */ /* Vertical alignment in flexbox */
   overflow: hidden; /* Hide any overflow if the text is too large */
 }
 
 .title-container h1 {
-  font-size: 24px; /* Adjust this value to the desired font size */
+  font-size: 24px; /* Adjust this value to the desired font size */ /* Define the font size */
   margin: 0; /* Remove any default margins */
   overflow: hidden; /* Hide any overflow if the text is too large */
   text-overflow: ellipsis; /* Display an ellipsis if the text overflows */
@@ -61,7 +61,7 @@ body {
 }
 
 .icon-burger {
-  display: flex; /* Change this to flex or block to make the icon visible */
+  display: flex; /* Change this to flex or block to make the icon visible */ /* Set layout to flexbox */
   flex-direction: column; /* Align the lines vertically */
   position: absolute;
   right: 4%;
@@ -73,7 +73,7 @@ body {
 .icon-burger .line {
   width: 30px;
   height: 5px;
-  background-color: #fff;
+  background-color: #fff; /* Set the background color */
   margin: 3px;
   border-radius: 3px;
   transition: all 0.3s ease-in-out;
@@ -107,7 +107,7 @@ body {
   top: 60px; /* Adjust based on the height of your nav-bar */
   left: 0;
   right: 0;
-  background-color: #000000;
+  background-color: #000000; /* Set the background color */
   text-align: center;
   overflow: hidden;
   max-height: 0;
@@ -132,7 +132,7 @@ body {
 .sub-menus ul li a {
   text-decoration: none;
   color: #fff;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif; /* Set the font type */
   transition: color 0.3s ease; /* Optional: smooth transition for color change */
 }
 
@@ -176,7 +176,7 @@ body {
   top: 30%;
   left: 0;
   transform: translateY(-50%);
-  background-color: #000;
+  background-color: #000; /* Set the background color */
   padding: 1px 2px;
   border-top: 1px solid #ffffff; /* White top border */
   border-right: 1px solid #ffffff; /* White right border */
@@ -207,17 +207,17 @@ body {
 .home-section-one {
   text-align: center; /* Center the content */
   padding: 0px; /* Add some padding */
-  background-color: #000000; /* Match the background color with the rest of the site */
+  background-color: #000000; /* Match the background color with the rest of the site */ /* Set the background color */
   color: #ffffff; /* White text color */
 }
 
 .home-title {
-  font-size: 40px; /* Adjust the font size of the title */
+  font-size: 40px; /* Adjust the font size of the title */ /* Define the font size */
   margin: 5px 0; /* Add some margin around the title */
 }
 
 .home-paragraph {
-  font-size: 15px; /* Adjust the font size of the paragraph */
+  font-size: 15px; /* Adjust the font size of the paragraph */ /* Define the font size */
   max-width: 400px; /* Set a maximum width to control the line length */
   margin: 0 auto; /* Center the paragraph if it's narrower than the max-width */
 }
@@ -234,18 +234,18 @@ body {
 .about-us-btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #2e8b57; /* Sea green color */
+  background-color: #2e8b57; /* Sea green color */ /* Set the background color */
   color: #fff; /* White text */
   border: 2px solid #2e8b57; /* Sea green border */
   border-radius: 10px; /* Rounded border */
   text-decoration: none;
   text-align: center;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Transition for color change */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition for color change */ /* Set the background color */
   margin-top: 15px; /* Add space above the button */
 }
 
 .about-us-btn:hover {
-  background-color: #fff; /* White background on hover */
+  background-color: #fff; /* White background on hover */ /* Set the background color */
   color: #2e8b57; /* Sea green text on hover */
 }
 
@@ -263,8 +263,8 @@ body {
 }
 
 .news-link {
-  display: flex;
-  align-items: center;
+  display: flex; /* Set layout to flexbox */
+  align-items: center; /* Vertical alignment in flexbox */
   text-decoration: none;
   color: inherit; /* Use the same color as the surrounding text */
 }
@@ -303,8 +303,8 @@ body {
 }
 
 .roster {
-  display: flex;
-  justify-content: space-evenly;
+  display: flex; /* Set layout to flexbox */
+  justify-content: space-evenly; /* Horizontal alignment in flexbox */
   flex-wrap: wrap;
 }
 
@@ -332,8 +332,8 @@ body {
 }
 
 .training-container {
-  display: flex;
-  justify-content: space-evenly;
+  display: flex; /* Set layout to flexbox */
+  justify-content: space-evenly; /* Horizontal alignment in flexbox */
   flex-wrap: wrap;
 }
 
@@ -411,13 +411,13 @@ body {
 
 .juniors-section h2 {
   /* Updated to h2 since the title is an h2 element */
-  font-size: 24px; /* Adjust the font size of the title */
+  font-size: 24px; /* Adjust the font size of the title */ /* Define the font size */
   margin-top: 0px;
   margin-bottom: 0px; /* Remove the bottom margin to match the TEAM section */
 }
 
 .juniors-section .content-container p {
-  font-size: 15px; /* Adjust the font size of the paragraph */
+  font-size: 15px; /* Adjust the font size of the paragraph */ /* Define the font size */
   max-width: 400px; /* Set a maximum width to control the line length */
   margin: 0 auto; /* Center the paragraph if it's narrower than the max-width */
 }
@@ -434,11 +434,11 @@ body {
 }
 
 .fixtures-text {
-  display: flex;
+  display: flex; /* Set layout to flexbox */
   text-align: left;
   max-width: 400px;
   margin: 10px auto;
-  font-size: 15px;
+  font-size: 15px; /* Define the font size */
 }
 
 .date {
@@ -469,14 +469,14 @@ body {
 }
 
 .media-title {
-  font-size: 24px; /* Adjust the font size of the title */
+  font-size: 24px; /* Adjust the font size of the title */ /* Define the font size */
   margin: 5px 0; /* Add some margin around the title */
   margin-bottom: 20px; /* Adjust this value to create the desired space */
 }
 
 .media-icons {
-  display: flex;
-  justify-content: center; /* Align the icons in the center */
+  display: flex; /* Set layout to flexbox */
+  justify-content: center; /* Align the icons in the center */ /* Horizontal alignment in flexbox */
   width: auto; /* Auto width to contain the icons */
   margin: 20px auto; /* This centers the container and adds some margin above and below */
 }
@@ -494,10 +494,10 @@ body {
 }
 
 .sponsor-images {
-  display: flex;
+  display: flex; /* Set layout to flexbox */
   flex-direction: column; /* Align the images vertically */
-  justify-content: space-between; /* Evenly space the images */
-  align-items: center; /* Center the images horizontally */
+  justify-content: space-between; /* Evenly space the images */ /* Horizontal alignment in flexbox */
+  align-items: center; /* Center the images horizontally */ /* Vertical alignment in flexbox */
   margin-top: 20px; /* Add space above the images */
 }
 
@@ -514,12 +514,12 @@ body {
 }
 
 .contact-section h1 {
-  font-size: 24px; /* Adjust the font size of the title */
+  font-size: 24px; /* Adjust the font size of the title */ /* Define the font size */
   margin: 5px 0; /* Add some margin around the title */
 }
 
 .contact-section p {
-  font-size: 15px; /* Adjust the font size of the paragraph */
+  font-size: 15px; /* Adjust the font size of the paragraph */ /* Define the font size */
   max-width: 400px; /* Set a maximum width to control the line length */
   margin: 0 auto; /* Center the paragraph if it's narrower than the max-width */
 }
@@ -539,7 +539,7 @@ body {
 }
 
 .footer {
-  background-color: #000; /* Match the background color with the rest of the site */
+  background-color: #000; /* Match the background color with the rest of the site */ /* Set the background color */
   color: #fff; /* White text color */
   padding: 20px 0; /* Adjust the padding for the footer */
   text-align: center; /* Center the text */
@@ -550,7 +550,7 @@ body {
 @media screen and (min-width: 576px) and (orientation: landscape) {
   /* Adjusting the body and container */
   body {
-    font-size: 16px;
+    font-size: 16px; /* Define the font size */
     padding-top: 0px; /* Adjust based on the height of your navigation bar */
   }
 
@@ -573,16 +573,16 @@ body {
 
   /* Adjusting the navigation bar */
   .nav-bar {
-    display: flex; /* Enable flexbox */
-    align-items: center; /* Center items vertically */
-    justify-content: left; /* Center items horizontally */
+    display: flex; /* Enable flexbox */ /* Set layout to flexbox */
+    align-items: center; /* Center items vertically */ /* Vertical alignment in flexbox */
+    justify-content: left; /* Center items horizontally */ /* Horizontal alignment in flexbox */
     flex-direction: row; /* Set the direction to row */
   }
   .nav-bar .logo img {
     height: 40px;
   }
   .nav-bar .icon-burger {
-    font-size: 30px;
+    font-size: 30px; /* Define the font size */
   }
 
   .carousel img {
@@ -608,7 +608,7 @@ body {
   /* Adjusting the news section */
   .news-section .news-item {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; /* Horizontal alignment in flexbox */
   }
   .news-section .news-item img {
     width: 40%;
@@ -636,7 +636,7 @@ body {
   /* Adjusting the training section */
   .training-section .training-details {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; /* Horizontal alignment in flexbox */
   }
   .training-section .training-details img {
     width: 40%;
@@ -644,8 +644,8 @@ body {
   }
 
   .fixtures-text {
-    display: flex; /* Flexbox layout to align items horizontally */
-    align-items: center; /* Center items vertically */
+    display: flex; /* Flexbox layout to align items horizontally */ /* Set layout to flexbox */
+    align-items: center; /* Center items vertically */ /* Vertical alignment in flexbox */
   }
 
   .date {
@@ -693,20 +693,20 @@ body {
 
   /* Display medium device navigation */
   .nav-bar-medium {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Set layout to flexbox */
+    justify-content: center; /* Horizontal alignment in flexbox */
     padding: 10px;
     position: -webkit-sticky; /* For Safari */
     position: sticky;
     top: 0; /* This ensures the navbar sticks to the top */
     z-index: 1000; /* This ensures the navbar stays on top of other content */
-    background-color: black;
+    background-color: black; /* Set the background color */
     /* ... other styles ... */
   }
 
   .nav-bar-medium ul {
-    display: flex;
-    justify-content: space-evenly; /* Distributes the items evenly */
+    display: flex; /* Set layout to flexbox */
+    justify-content: space-evenly; /* Distributes the items evenly */ /* Horizontal alignment in flexbox */
     list-style: none; /* Removes bullet points */
     padding: 0;
     margin: 0;
@@ -724,9 +724,9 @@ body {
   }
 
   .home-club-medium {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    display: flex; /* Set layout to flexbox */
+    align-items: center; /* Vertical alignment in flexbox */
+    justify-content: flex-start; /* Horizontal alignment in flexbox */
     padding: 10px;
     position: absolute;
     top: 6%; /* Adjust this value to move the container down */
@@ -735,16 +735,16 @@ body {
   }
 
   .title-container {
-    display: flex;
+    display: flex; /* Set layout to flexbox */
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: flex-start; /* Vertical alignment in flexbox */
+    justify-content: center; /* Horizontal alignment in flexbox */
     margin-left: 10px;
     height: auto; /* This should allow the container to fit its content */
   }
 
   h1 {
-    font-size: 24px; /* Adjust as needed */
+    font-size: 24px; /* Adjust as needed */ /* Define the font size */
     line-height: 1.2; /* Adjust as needed */
     margin: 0;
     padding: 0;
@@ -755,7 +755,7 @@ body {
   }
 
   .subtitle {
-    font-size: 16px; /* Adjust as needed */
+    font-size: 16px; /* Adjust as needed */ /* Define the font size */
     margin-top: 0px;
   }
 
@@ -780,8 +780,8 @@ body {
   }
 
   .carousel {
-    display: flex;
-    align-items: center;
+    display: flex; /* Set layout to flexbox */
+    align-items: center; /* Vertical alignment in flexbox */
     position: relative;
     width: 100%;
     height: 550px;
@@ -801,10 +801,10 @@ body {
   }
 
   .news-item {
-    display: flex;
+    display: flex; /* Set layout to flexbox */
     flex-direction: column;
-    align-items: center; /* This will center the child items horizontally */
-    justify-content: center; /* This will center the child items vertically */
+    align-items: center; /* This will center the child items horizontally */ /* Vertical alignment in flexbox */
+    justify-content: center; /* This will center the child items vertically */ /* Horizontal alignment in flexbox */
     text-align: center; /* This will center text inside the child elements */
   }
 
@@ -814,7 +814,7 @@ body {
   }
 
   .news-name {
-    font-size: 18px;
+    font-size: 18px; /* Define the font size */
   }
 
   .article-picture {
@@ -836,21 +836,21 @@ body {
 
   /* Display medium device navigation */
   .nav-bar-medium {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Set layout to flexbox */
+    justify-content: center; /* Horizontal alignment in flexbox */
     padding: 10px;
     position: -webkit-sticky; /* For Safari */
     position: sticky;
     top: 0; /* This ensures the navbar sticks to the top */
     z-index: 1000; /* This ensures the navbar stays on top of other content */
-    background-color: black;
+    background-color: black; /* Set the background color */
     /* ... other styles ... */
   }
 
   .nav-bar-medium ul {
-    display: flex;
-    font-size: larger;
-    justify-content: space-evenly; /* Distributes the items evenly */
+    display: flex; /* Set layout to flexbox */
+    font-size: larger; /* Define the font size */
+    justify-content: space-evenly; /* Distributes the items evenly */ /* Horizontal alignment in flexbox */
     list-style: none; /* Removes bullet points */
     padding: 0;
     margin: 0;
@@ -868,9 +868,9 @@ body {
   }
 
   .home-club-medium {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    display: flex; /* Set layout to flexbox */
+    align-items: center; /* Vertical alignment in flexbox */
+    justify-content: flex-start; /* Horizontal alignment in flexbox */
     padding: 10px;
     position: absolute;
     top: 15%; /* Adjust this value to move the container down */
@@ -879,17 +879,17 @@ body {
   }
 
   .title-container {
-    display: flex;
+    display: flex; /* Set layout to flexbox */
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: flex-start; /* Vertical alignment in flexbox */
+    justify-content: center; /* Horizontal alignment in flexbox */
     margin-left: 10px;
     width: auto;  /* Ensure the container takes as much width as needed */
     height: auto; /* This should allow the container to fit its content */
   }
   
   .home-club-medium h1 {
-    font-size: 28px;
+    font-size: 28px; /* Define the font size */
     line-height: 1.2;
     margin: 0;
     padding: 0;
@@ -900,7 +900,7 @@ body {
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 20px; /* Define the font size */
     margin-bottom: 0px;
   }
 
@@ -921,12 +921,12 @@ body {
   }
 
   .home-paragraph {
-    font-size: 20px;
+    font-size: 20px; /* Define the font size */
   }
 
   .carousel {
-    display: flex;
-    align-items: center;
+    display: flex; /* Set layout to flexbox */
+    align-items: center; /* Vertical alignment in flexbox */
     position: relative;
     width: 100%;
     height: 650px;
@@ -944,13 +944,13 @@ body {
   }
 
   .news-link {
-    display: flex; /* This ensures all child elements of .news-link are in a row */
-    align-items: center; /* Vertically centers the child elements */
+    display: flex; /* This ensures all child elements of .news-link are in a row */ /* Set layout to flexbox */
+    align-items: center; /* Vertically centers the child elements */ /* Vertical alignment in flexbox */
   }
   
   .news-name {
     flex-grow: 0; /* This allows the .news-name to grow and take up the available space */
-    font-size: 18px; /* Increase the font size for better readability */
+    font-size: 18px; /* Increase the font size for better readability */ /* Define the font size */
     white-space: nowrap; /* Prevents the text inside from wrapping to the next line */
   }
 
@@ -966,15 +966,6 @@ body {
     margin-left: 75px;
     margin-right: 80px;
     object-fit: cover;
-}
-
-.juniors-picture {
-  max-width: 500px;
-  height: auto;
-}
-
-.fixtures-picture {
-  max-width: 700px;
 }
 
 }
