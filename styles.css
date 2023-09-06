@@ -967,33 +967,33 @@ body {
 }
 
 .juniors-picture {
-  max-width: 500px;
+  max-width: 500px; /* Adjust this value as needed */
   height: auto;
 }
 
 .fixtures-picture {
-  max-width: 750px;
+  max-width: 750px; /* Adjust this value as needed */
   height: auto;
 }
 
 .section-title, .contact-section h1 {
-  font-size: 30px;
+  font-size: 30px; /* Adjust this value as needed */
 }
 
 .team-section h2, .fixtures-subtitle {
- font-size: 25px;
+ font-size: 25px; /* Adjust this value as needed */
 }
 
 .forwards h3, .backs h3, .juniors h3,.mens-team h3, .training-info h3, .contact-info h3 {
-font-size: 25px;
+font-size: 25px; /* Adjust this value as needed */
 }
 
 .forwards p, .backs p, .coaches p, .juniors p, .mens-team p, .training-info p, .juniors-section .content-container p, .fixtures-section .date, .fixtures-section .score, .contact-info p {
-  font-size: 18px;
+  font-size: 18px; /* Adjust this value as needed */
 }
 
 .fixtures-section .teams {
-  font-size: 18px;
+  font-size: 18px; /* Adjust this value as needed */
 }
 
 .date {
@@ -1004,9 +1004,32 @@ font-size: 25px;
 }
 
 .score {
-  margin-right: -9px;
+  margin-right: -9px; /* Adjust this value as needed */
+}
 }
 
+@media (min-width: 769px) {
+  /* Your desktop-specific CSS styles go here */
 
+  .fixed-sidebar {
+    display: none;
+  }
 
+  /* Hide small device navigation */
+  .nav-bar {
+    display: none;
+  }
+
+  /* Display medium device navigation */
+  .nav-bar-medium {
+    display: flex; /* Set layout to flexbox */
+    justify-content: center; /* Horizontal alignment in flexbox */
+    padding: 10px;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* This ensures the navbar sticks to the top */
+    z-index: 1000; /* This ensures the navbar stays on top of other content */
+    background-color: black; /* Set the background color */
+    /* ... other styles ... */
+  }
 }
