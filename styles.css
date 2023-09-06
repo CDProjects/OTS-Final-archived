@@ -468,12 +468,6 @@ body {
   color: #ffffff; /* White text color */
 }
 
-.media-title {
-  font-size: 24px; /* Adjust the font size of the title */ /* Define the font size */
-  margin: 5px 0; /* Add some margin around the title */
-  margin-bottom: 20px; /* Adjust this value to create the desired space */
-}
-
 .media-icons {
   display: flex; /* Set layout to flexbox */
   justify-content: center; /* Align the icons in the center */ /* Horizontal alignment in flexbox */
@@ -943,6 +937,10 @@ body {
     transform: translateY(0);  /* Adjust this value to move the image up */
   }
 
+  .news-title {
+    font-size: 30px;
+  }
+
   .news-link {
     display: flex; /* This ensures all child elements of .news-link are in a row */ /* Set layout to flexbox */
     align-items: center; /* Vertically centers the child elements */ /* Vertical alignment in flexbox */
@@ -950,7 +948,7 @@ body {
   
   .news-name {
     flex-grow: 0; /* This allows the .news-name to grow and take up the available space */
-    font-size: 18px; /* Increase the font size for better readability */ /* Define the font size */
+    font-size: 20px; /* Increase the font size for better readability */ /* Define the font size */
     white-space: nowrap; /* Prevents the text inside from wrapping to the next line */
   }
 
@@ -976,6 +974,26 @@ body {
 .fixtures-picture {
   max-width: 750px;
   height: auto;
+}
+
+.section-title, .contact-section h1 {
+  font-size: 30px;
+}
+
+.team-section h2, .fixtures-subtitle {
+ font-size: 25px;
+}
+
+.forwards h3, .backs h3, .juniors h3,.mens-team h3, .training-info h3, .contact-info h3 {
+font-size: 25px;
+}
+
+.forwards p, .backs p, .coaches p, .juniors p, .mens-team p, .training-info p, .juniors-section .content-container p, .fixtures-section .date, .fixtures-section .score, .contact-info p {
+  font-size: 18px;
+}
+
+.fixtures-section .teams {
+  font-size: 15px;
 }
 
 }
