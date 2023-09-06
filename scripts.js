@@ -38,6 +38,13 @@ smoothScrollToSection("fixtures-link", "fixtures-section");
 smoothScrollToSection("media-link", "media-section");
 smoothScrollToSection("contact-link", "contact-section");
 
+// Smooth scrolling for the about-us-btn
+document.querySelector(".about-us-btn").addEventListener("click", function (e) {
+  e.preventDefault();
+  var section = document.getElementById("contact-section");
+  section.scrollIntoView({ behavior: "smooth" });
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   // Preload images
   const images = ["Images/Akseli Peltoniemi.png", "Images/Alejandro Ruiz.png"];
@@ -60,7 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(carouselCycle, 3000);
 });
 
-// Select all navbar links
 // Select all navbar links
 const navLinks = document.querySelectorAll('.nav-bar-medium a');
 
