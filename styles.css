@@ -968,4 +968,13 @@ body {
     object-fit: cover;
 }
 
+.juniors-picture {
+  max-width: 500px;
+  height: auto;
+}
+
+.fixtures-picture {
+  max-width: 700px;
+}
+
 }
