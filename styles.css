@@ -959,4 +959,13 @@ body {
     margin-left: 50px; /* Adjust this value as needed */
   }
 
+  .news-section .news-item .article-picture {
+    width: 120px;  /* Reduced width */
+    height: 90px;  /* Reduced height while maintaining the same aspect ratio */
+    border-radius: 10px;
+    margin-left: 75px;
+    margin-right: 80px;
+    object-fit: cover;
+}
+
 }
