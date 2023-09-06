@@ -620,6 +620,14 @@ body {
     height: 60px;
   }
 
+  .news-section .news-item .article-picture {
+    width: 40%;
+    height: auto;  /* Allow the height to adjust based on the width to maintain aspect ratio */
+    object-fit: contain;  /* The image will fit within its box without distortion */
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
   /* Adjusting the team section */
   .team-section .team-members {
     grid-template-columns: repeat(2, 1fr);
