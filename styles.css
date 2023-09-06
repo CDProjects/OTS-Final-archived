@@ -993,7 +993,20 @@ font-size: 25px;
 }
 
 .fixtures-section .teams {
-  font-size: 15px;
+  font-size: 18px;
 }
+
+.date {
+  margin-left: 15px;/* Adjustments for the date */
+  margin-right: -1px; /* Adjust as needed */
+  width: 70px; /* Fixed width for date column */
+  text-align: left; /* Left-aligned text */
+}
+
+.score {
+  margin-right: -9px;
+}
+
+
 
 }
