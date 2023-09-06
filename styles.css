@@ -935,4 +935,20 @@ body {
     transform: translateY(0);  /* Adjust this value to move the image up */
   }
 
+  .news-link {
+    display: flex; /* This ensures all child elements of .news-link are in a row */
+    align-items: center; /* Vertically centers the child elements */
+  }
+  
+  .news-name {
+    flex-grow: 0; /* This allows the .news-name to grow and take up the available space */
+    font-size: 18px; /* Increase the font size for better readability */
+    white-space: nowrap; /* Prevents the text inside from wrapping to the next line */
+  }
+
+  .news-icon {
+    width: 60px;
+    margin-left: 50px; /* Adjust this value as needed */
+  }
+
 }
