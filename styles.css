@@ -616,11 +616,11 @@ body {
 
   .news-section .news-item .article-picture {
     width: 40%;
-    height: auto;  /* Allow the height to adjust based on the width to maintain aspect ratio */
-    object-fit: contain;  /* The image will fit within its box without distortion */
+    height: auto; /* Allow the height to adjust based on the width to maintain aspect ratio */
+    object-fit: contain; /* The image will fit within its box without distortion */
     margin-right: 20px;
     border-radius: 10px;
-}
+  }
 
   /* Adjusting the team section */
   .team-section .team-members {
@@ -878,18 +878,18 @@ body {
     align-items: flex-start; /* Vertical alignment in flexbox */
     justify-content: center; /* Horizontal alignment in flexbox */
     margin-left: 10px;
-    width: auto;  /* Ensure the container takes as much width as needed */
+    width: auto; /* Ensure the container takes as much width as needed */
     height: auto; /* This should allow the container to fit its content */
   }
-  
+
   .home-club-medium h1 {
     font-size: 28px; /* Define the font size */
     line-height: 1.2;
     margin: 0;
     padding: 0;
     margin-bottom: -15px;
-    overflow: visible;  /* Allow the text to flow naturally */
-    text-overflow: clip;  /* If overflow happens, clip it without the ellipsis */
+    overflow: visible; /* Allow the text to flow naturally */
+    text-overflow: clip; /* If overflow happens, clip it without the ellipsis */
     white-space: nowrap; /* Keep the text on one line */
   }
 
@@ -930,11 +930,11 @@ body {
   }
 
   .carousel img {
-    width: 100%; 
-    max-height: 100%;  /* Ensures the image doesn't exceed the carousel height */
-    object-fit: contain;  /* The image will scale while maintaining its aspect ratio */
-    position: relative; 
-    transform: translateY(0);  /* Adjust this value to move the image up */
+    width: 100%;
+    max-height: 100%; /* Ensures the image doesn't exceed the carousel height */
+    object-fit: contain; /* The image will scale while maintaining its aspect ratio */
+    position: relative;
+    transform: translateY(0); /* Adjust this value to move the image up */
   }
 
   .news-title {
@@ -945,7 +945,7 @@ body {
     display: flex; /* This ensures all child elements of .news-link are in a row */ /* Set layout to flexbox */
     align-items: center; /* Vertically centers the child elements */ /* Vertical alignment in flexbox */
   }
-  
+
   .news-name {
     flex-grow: 0; /* This allows the .news-name to grow and take up the available space */
     font-size: 20px; /* Increase the font size for better readability */ /* Define the font size */
@@ -958,58 +958,89 @@ body {
   }
 
   .news-section .news-item .article-picture {
-    width: 120px;  /* Reduced width */
-    height: 90px;  /* Reduced height while maintaining the same aspect ratio */
+    width: 120px; /* Reduced width */
+    height: 90px; /* Reduced height while maintaining the same aspect ratio */
     border-radius: 10px;
     margin-left: 75px;
     margin-right: 80px;
     object-fit: cover;
+  }
+
+  .juniors-picture {
+    max-width: 500px; /* Adjust this value as needed */
+    height: auto;
+  }
+
+  .fixtures-picture {
+    max-width: 750px; /* Adjust this value as needed */
+    height: auto;
+  }
+
+  .section-title,
+  .contact-section h1 {
+    font-size: 30px; /* Adjust this value as needed */
+  }
+
+  .team-section h2,
+  .fixtures-subtitle {
+    font-size: 25px; /* Adjust this value as needed */
+  }
+
+  .forwards h3,
+  .backs h3,
+  .juniors h3,
+  .mens-team h3,
+  .training-info h3,
+  .contact-info h3 {
+    font-size: 25px; /* Adjust this value as needed */
+  }
+
+  .forwards p,
+  .backs p,
+  .coaches p,
+  .juniors p,
+  .mens-team p,
+  .training-info p,
+  .juniors-section .content-container p,
+  .fixtures-section .date,
+  .fixtures-section .score,
+  .contact-info p {
+    font-size: 18px; /* Adjust this value as needed */
+  }
+
+  .fixtures-section .teams {
+    font-size: 18px; /* Adjust this value as needed */
+  }
+
+  .date {
+    margin-left: 15px; /* Adjustments for the date */
+    margin-right: -1px; /* Adjust as needed */
+    width: 70px; /* Fixed width for date column */
+    text-align: left; /* Left-aligned text */
+  }
+
+  .score {
+    margin-right: -9px; /* Adjust this value as needed */
+  }
 }
 
-.juniors-picture {
-  max-width: 500px; /* Adjust this value as needed */
-  height: auto;
-}
-
-.fixtures-picture {
-  max-width: 750px; /* Adjust this value as needed */
-  height: auto;
-}
-
-.section-title, .contact-section h1 {
-  font-size: 30px; /* Adjust this value as needed */
-}
-
-.team-section h2, .fixtures-subtitle {
- font-size: 25px; /* Adjust this value as needed */
-}
-
-.forwards h3, .backs h3, .juniors h3,.mens-team h3, .training-info h3, .contact-info h3 {
-font-size: 25px; /* Adjust this value as needed */
-}
-
-.forwards p, .backs p, .coaches p, .juniors p, .mens-team p, .training-info p, .juniors-section .content-container p, .fixtures-section .date, .fixtures-section .score, .contact-info p {
-  font-size: 18px; /* Adjust this value as needed */
-}
-
-.fixtures-section .teams {
-  font-size: 18px; /* Adjust this value as needed */
-}
-
-.date {
-  margin-left: 15px;/* Adjustments for the date */
-  margin-right: -1px; /* Adjust as needed */
-  width: 70px; /* Fixed width for date column */
-  text-align: left; /* Left-aligned text */
-}
-
-.score {
-  margin-right: -9px; /* Adjust this value as needed */
-}
-}
-
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   /* Your desktop-specific CSS styles go here */
+
+  body {
+    width: 70%; /* Set the width of the main content */
+    margin: 0 auto; /* Center the content horizontally */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow around the content for depth */
+  }
+
+  html {
+    background: url("Images/Team\ 2023\ Tampere.png") no-repeat center center
+      fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
   .fixed-sidebar {
     display: none;
