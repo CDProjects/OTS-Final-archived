@@ -1076,8 +1076,13 @@ body {
 
   .nav-bar-medium a {
     color: white;
+    transition: color 0.3s ease; /* Adds smooth transition */
     text-decoration: none; /* Removes underlines */
   }
+
+  .nav-bar-medium a:hover {
+    color: seagreen; /* Change color to sea-green on hover */
+}
 
   .home-image-medium {
     width: 200px; /* Adjust the size of the logo */
