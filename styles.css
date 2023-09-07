@@ -1122,9 +1122,10 @@ body {
   }
 
   .home-title {
+    font-size: 60px;
     position: absolute; /* or relative, depending on your design */
     text-align: left;
-    top: 450px; /* Adjust this to position the elements */
+    top: 410px; /* Adjust this to position the elements */
     left: 400px;
     z-index: 11; /* This ensures they are above the .home-club-medium element */
   }
@@ -1132,7 +1133,7 @@ body {
   .paragraph-container {
     position: absolute; /* or relative, depending on your design */
     text-align: left;
-    top: 550px; /* Adjust this to position the elements */
+    top: 530px; /* Adjust this to position the elements */
     left: 400px;
     z-index: 11; /* This ensures they are above the .home-club-medium element */
   }
@@ -1146,9 +1147,9 @@ body {
     align-items: center; /* Vertical alignment in flexbox */
     position: relative;
     width: 100%;
-    height: 650px;
+    height: 900px;
     overflow: hidden;
-    margin-top: -90px; /* Move the carousel up. Adjust this value as needed. */
+    margin-top: -140px; /* Move the carousel up. Adjust this value as needed. */
     margin-left: 200px;
   }
 
