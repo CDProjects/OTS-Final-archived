@@ -337,6 +337,10 @@ body {
   flex-wrap: wrap;
 }
 
+.hidden-on-mobile {
+  display: none;
+}
+
 .juniors,
 .mens-team {
   width: 40%; /* Adjust based on preferred size */
@@ -966,6 +970,10 @@ body {
     object-fit: cover;
   }
 
+  .hidden-on-mobile {
+    display: none;
+}
+
   .juniors-picture {
     max-width: 500px; /* Adjust this value as needed */
     height: auto;
@@ -1229,6 +1237,16 @@ body {
     max-width: 500px; /* Adjust this value as needed */
     height: auto;
   }
+
+  .hidden-on-mobile {
+    display: block;
+}
+
+.juniors-section .juniors-image {
+    width: 40%;  /* Adjust this value as needed */
+    height: auto;
+    margin: 0 auto 20px;  /* Centers the images and gives space between them */
+}
 
 
 }
