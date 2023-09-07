@@ -341,6 +341,12 @@ body {
   display: none;
 }
 
+.new-images-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Adds some space between the new images and the existing image */
+}
+
 .juniors,
 .mens-team {
   width: 40%; /* Adjust based on preferred size */
@@ -972,7 +978,7 @@ body {
 
   .hidden-on-mobile {
     display: none;
-}
+  }
 
   .juniors-picture {
     max-width: 500px; /* Adjust this value as needed */
@@ -1181,7 +1187,7 @@ body {
   }
 
   .news-items-wrapper {
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 25px;
@@ -1218,7 +1224,8 @@ body {
     height: auto;
   }
 
-  .team-section, .juniors-section {
+  .team-section,
+  .juniors-section {
     background-color: black;
   }
 
@@ -1233,20 +1240,108 @@ body {
     padding-bottom: 25px;
   }
 
+  .new-images-wrapper {
+    display: flex;
+    justify-content: space-between; /* Maximizes the space between the images */
+    margin-top: 30px; /* Increase this value as needed to adjust the space */
+    margin-bottom: 20px; /* Adds space between the new images and the existing image */
+  }
+
+  /* The styles for .juniors-picture and .juniors-image can be combined since they share several properties. */
+  .juniors-picture,
+  .juniors-image {
+    width: 49%; /* Consistent width for all images. Adjust as needed. */
+    height: auto;
+    border-radius: 5px;
+    margin: 0 auto 20px; /* Centers the images and gives space between them */
+  }
+
+  /* The max-width property can be added to the combined rule if necessary, or it can be specifically targeted for .juniors-picture. */
   .juniors-picture {
     max-width: 500px; /* Adjust this value as needed */
+    width: 70%;
     height: auto;
+    border-radius: 5px;
+    margin: 0 0 20px 0; /* Resetting the left and right margins to 0 */
+  }
+
+  .juniors-picture-wrapper {
+    width: 49%; /* Matches the width of the images above */
+    text-align: left; /* Ensures content inside the div aligns to the left */
+    margin-left: 110px; /* Adjust this value to move the image to the desired position */
+    margin-right: -100px;
   }
 
   .hidden-on-mobile {
-    display: block;
-}
+    display: block; /* Ensures the images are displayed on larger screens */
+    width: 49%; /* Adjust this value as needed */
+  }
 
-.juniors-section .juniors-image {
-    width: 40%;  /* Adjust this value as needed */
+  .juniors-section .juniors-image {
+    width: 40%; /* Adjust this value as needed */
     height: auto;
-    margin: 0 auto 20px;  /* Centers the images and gives space between them */
-}
+    border-radius: 5px;
+    margin: 0 auto 20px; /* Centers the images and gives space between them */
+  }
 
+  .juniors-image.hidden-on-mobile:first-child {
+    margin-right: -60px; /* Adjusts the spacing between the images */
+  }
 
+  .juniors-content-group {
+    display: flex;
+    align-items: start; /* Aligns items to the start (top) */
+  }
+
+  .juniors-section .content-container p {
+    text-align: left;  /* Aligns text to the left */
+    margin-left: 0px; /* Gives some space between the image and the text */
+  }
+
+  .section-title,
+  .contact-section h1 {
+    font-size: 30px; /* Adjust this value as needed */
+  }
+
+  .team-section h2,
+  .fixtures-subtitle {
+    font-size: 25px; /* Adjust this value as needed */
+  }
+
+  .forwards h3,
+  .backs h3,
+  .juniors h3,
+  .mens-team h3,
+  .training-info h3,
+  .contact-info h3 {
+    font-size: 25px; /* Adjust this value as needed */
+  }
+
+  .forwards p,
+  .backs p,
+  .coaches p,
+  .juniors p,
+  .mens-team p,
+  .training-info p,
+  .juniors-section .content-container p,
+  .fixtures-section .date,
+  .fixtures-section .score,
+  .contact-info p {
+    font-size: 23px; /* Adjust this value as needed */
+  }
+
+  .fixtures-section .teams {
+    font-size: 18px; /* Adjust this value as needed */
+  }
+
+  .date {
+    margin-left: 15px; /* Adjustments for the date */
+    margin-right: -1px; /* Adjust as needed */
+    width: 70px; /* Fixed width for date column */
+    text-align: left; /* Left-aligned text */
+  }
+
+  .score {
+    margin-right: -9px; /* Adjust this value as needed */
+  }
 }
