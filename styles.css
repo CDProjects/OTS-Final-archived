@@ -1090,7 +1090,7 @@ body {
     justify-content: flex-start; /* Horizontal alignment in flexbox */
     padding: 10px;
     position: absolute;
-    top: 6%; /* Adjust this value to move the container down */
+    top: 12%; /* Adjust this value to move the container down */
     left: 20.25%; /* Adjust this value to move the container to the right */
     z-index: 10; /* Ensure it's above the carousel */
   }
@@ -1124,16 +1124,16 @@ body {
   .home-title {
     position: absolute; /* or relative, depending on your design */
     text-align: left;
-    top: 300px; /* Adjust this to position the elements */
-    left: 75px;
+    top: 450px; /* Adjust this to position the elements */
+    left: 400px;
     z-index: 11; /* This ensures they are above the .home-club-medium element */
   }
 
   .paragraph-container {
     position: absolute; /* or relative, depending on your design */
     text-align: left;
-    top: 400px; /* Adjust this to position the elements */
-    left: 75px;
+    top: 550px; /* Adjust this to position the elements */
+    left: 400px;
     z-index: 11; /* This ensures they are above the .home-club-medium element */
   }
 
