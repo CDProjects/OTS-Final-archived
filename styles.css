@@ -1030,6 +1030,7 @@ body {
   body {
     width: 70%; /* Set the width of the main content */
     margin: 0 auto; /* Center the content horizontally */
+    background: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow around the content for depth */
   }
 
@@ -1164,5 +1165,9 @@ body {
     object-fit: contain; /* The image will scale while maintaining its aspect ratio */
     position: relative;
     transform: translateY(0); /* Adjust this value to move the image up */
+  }
+
+  .carousel-container {
+    background: black;
   }
 }
