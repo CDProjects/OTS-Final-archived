@@ -1157,6 +1157,7 @@ body {
     overflow: hidden;
     margin-top: -140px; /* Move the carousel up. Adjust this value as needed. */
     margin-left: 200px;
+    padding-bottom: 35px;
   }
 
   .carousel img {
@@ -1172,9 +1173,10 @@ body {
   }
 
   .news-items-wrapper {
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 25px;
   }
   .news-section .news-item {
     width: calc(
@@ -1208,7 +1210,25 @@ body {
     height: auto;
   }
 
-  .team-section {
+  .team-section, .juniors-section {
     background-color: black;
   }
+
+  .team-picture {
+    width: 100%;
+    max-width: 1000px; /* Adjust based on your preferred size */
+    margin: 10px auto;
+    margin-bottom: 10px; /* Reduce this value to bring the picture closer to the title */
+  }
+
+  .training-info {
+    padding-bottom: 25px;
+  }
+
+  .juniors-picture {
+    max-width: 500px; /* Adjust this value as needed */
+    height: auto;
+  }
+
+
 }
