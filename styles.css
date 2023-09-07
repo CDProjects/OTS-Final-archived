@@ -1170,4 +1170,19 @@ body {
   .carousel-container {
     background: black;
   }
+
+  .news-items-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.news-section .news-item {
+    width: calc(33.33% - 20px); /* subtracting margin for spacing between items */
+    margin-bottom: 20px;
+}
+
+.news-item .article-picture {
+  position: relative;
+}
+
 }
