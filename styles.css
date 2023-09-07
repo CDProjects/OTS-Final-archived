@@ -1083,7 +1083,7 @@ body {
 
   .nav-bar-medium a:hover {
     color: seagreen; /* Change color to sea-green on hover */
-}
+  }
 
   .home-image-medium {
     width: 200px; /* Adjust the size of the logo */
@@ -1175,14 +1175,40 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-.news-section .news-item {
-    width: calc(33.33% - 20px); /* subtracting margin for spacing between items */
+  }
+  .news-section .news-item {
+    width: calc(
+      33.33% - 20px
+    ); /* subtracting margin for spacing between items */
+    width: 50%; /* Just for testing */
     margin-bottom: 20px;
-}
+  }
 
-.news-item .article-picture {
-  position: relative;
-}
+  .news-item .article-picture {
+    position: relative;
+  }
 
+  .news-item .news-link {
+    font-size: 24px; /* adjust as per your preference */
+    padding: 10px; /* adding some padding to increase the clickable area */
+  }
+
+  .news-item .news-icon {
+    width: 80px; /* adjust as per your preference */
+    height: 80px; /* adjust as per your preference */
+  }
+
+  .news-item {
+    width: calc(33.33% - 20px); /* or adjust as needed */
+    margin-bottom: 20px;
+  }
+
+  .news-item .article-picture img {
+    width: 100%;
+    height: auto;
+  }
+
+  .team-section {
+    background-color: black;
+  }
 }
