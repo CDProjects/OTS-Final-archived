@@ -1063,4 +1063,100 @@ body {
     background-color: black; /* Set the background color */
     /* ... other styles ... */
   }
+
+  .nav-bar-medium ul {
+    display: flex; /* Set layout to flexbox */
+    font-size: larger; /* Define the font size */
+    justify-content: space-evenly; /* Distributes the items evenly */ /* Horizontal alignment in flexbox */
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensures that the list takes up the full width of the container */
+  }
+
+  .nav-bar-medium a {
+    color: white;
+    text-decoration: none; /* Removes underlines */
+  }
+
+  .home-image-medium {
+    width: 200px; /* Adjust the size of the logo */
+    height: auto;
+  }
+
+  .home-club-medium {
+    display: flex; /* Set layout to flexbox */
+    align-items: center; /* Vertical alignment in flexbox */
+    justify-content: flex-start; /* Horizontal alignment in flexbox */
+    padding: 10px;
+    position: absolute;
+    top: 6%; /* Adjust this value to move the container down */
+    left: 20.25%; /* Adjust this value to move the container to the right */
+    z-index: 10; /* Ensure it's above the carousel */
+  }
+
+  .title-container {
+    display: flex; /* Set layout to flexbox */
+    flex-direction: column;
+    align-items: flex-start; /* Vertical alignment in flexbox */
+    justify-content: center; /* Horizontal alignment in flexbox */
+    margin-left: 10px;
+    width: auto; /* Ensure the container takes as much width as needed */
+    height: auto; /* This should allow the container to fit its content */
+  }
+
+  .home-club-medium h1 {
+    font-size: 35px; /* Define the font size */
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -15px;
+    overflow: visible; /* Allow the text to flow naturally */
+    text-overflow: clip; /* If overflow happens, clip it without the ellipsis */
+    white-space: nowrap; /* Keep the text on one line */
+  }
+
+  h2 {
+    font-size: 25px; /* Define the font size */
+    margin-bottom: 0px;
+  }
+
+  .home-title {
+    position: absolute; /* or relative, depending on your design */
+    text-align: left;
+    top: 300px; /* Adjust this to position the elements */
+    left: 75px;
+    z-index: 11; /* This ensures they are above the .home-club-medium element */
+  }
+
+  .paragraph-container {
+    position: absolute; /* or relative, depending on your design */
+    text-align: left;
+    top: 400px; /* Adjust this to position the elements */
+    left: 75px;
+    z-index: 11; /* This ensures they are above the .home-club-medium element */
+  }
+
+  .home-paragraph {
+    font-size: 20px; /* Define the font size */
+  }
+
+  .carousel {
+    display: flex; /* Set layout to flexbox */
+    align-items: center; /* Vertical alignment in flexbox */
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    margin-top: -90px; /* Move the carousel up. Adjust this value as needed. */
+    margin-left: 200px;
+  }
+
+  .carousel img {
+    width: 100%;
+    max-height: 100%; /* Ensures the image doesn't exceed the carousel height */
+    object-fit: contain; /* The image will scale while maintaining its aspect ratio */
+    position: relative;
+    transform: translateY(0); /* Adjust this value to move the image up */
+  }
 }
