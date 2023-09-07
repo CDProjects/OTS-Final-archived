@@ -1170,4 +1170,22 @@ body {
   .carousel-container {
     background: black;
   }
+
+  .news-section {
+    display: flex; /* Use flexbox to align news-items in a row */
+    justify-content: center; /* Center the news-items horizontally */
+    flex-wrap: wrap; /* Allow the items to wrap if there are more than 3 */
+}
+
+.news-item {
+    flex: 0 1 calc(33.33% - 20px); /* Each news-item takes up roughly 1/3 of the container's width, minus some margin */
+    margin: 10px; /* Spacing between news-items */
+    text-align: center; /* Center the content of each news-item */
+}
+
+.news-link {
+    display: flex; /* Use flexbox to align the icon and name */
+    flex-direction: column; /* Stack the icon and name vertically */
+    align-items: center; /* Center the icon and name horizontally */
+}
 }
