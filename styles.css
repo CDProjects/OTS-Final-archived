@@ -1293,6 +1293,11 @@ body {
     align-items: start; /* Aligns items to the start (top) */
   }
 
+  .juniors-section .content-container {
+    width: calc(50% - 10px); /* Takes up the remaining width, minus a small gap. Adjust as needed. */
+    max-width: none; /* Override any max-width settings from other styles */
+    padding-left: 10px;  /* Spacing between the picture and the text */
+
   .juniors-section .content-container p {
     text-align: left;  /* Aligns text to the left */
     margin-left: 0px; /* Gives some space between the image and the text */
@@ -1344,4 +1349,5 @@ body {
   .score {
     margin-right: -9px; /* Adjust this value as needed */
   }
+}
 }

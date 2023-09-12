@@ -2,18 +2,23 @@ function toggleMenu() {
   const subMenus = document.querySelector(".sub-menus");
   const hamburgerMenu = document.querySelector(".icon-burger");
 
-  if (subMenus.style.maxHeight === "0px" || subMenus.style.maxHeight === "") {
-    // Ease-in effect when opening
-    subMenus.style.transition = "max-height 0.5s ease-in"; // 1-second ease-in
-    subMenus.style.maxHeight = "100vh";
-  } else {
-    // Immediate disappearance when closing
-    subMenus.style.transition = "none"; // No transition
-    subMenus.style.maxHeight = "0px";
-  }
+  try {
+    if (subMenus.style.maxHeight === "0px" || subMenus.style.maxHeight === "") {
+      // Ease-in effect when opening
+      subMenus.style.transition = "max-height 0.5s ease-in"; // 1-second ease-in
+      subMenus.style.maxHeight = "100vh";
+    } else {
+      // Immediate disappearance when closing
+      subMenus.style.transition = "none"; // No transition
+      subMenus.style.maxHeight = "0px";
+    }
 
-  hamburgerMenu.classList.toggle("active");
+    hamburgerMenu.classList.toggle("active");
+  } catch (error) {
+    console.log(error);
+  }
 }
+
 // HOME sub menu scroll to top of page
 document.getElementById("home-link").addEventListener("click", function (e) {
   e.preventDefault(); // Prevent the default behavior
@@ -22,11 +27,15 @@ document.getElementById("home-link").addEventListener("click", function (e) {
 
 // Smooth scrolling for each sub menu
 function smoothScrollToSection(linkId, sectionId) {
-  document.getElementById(linkId).addEventListener("click", function (e) {
-    e.preventDefault();
-    var section = document.getElementById(sectionId);
-    section.scrollIntoView({ behavior: "smooth" });
-  });
+  try {
+    document.getElementById(linkId).addEventListener("click", function (e) {
+      e.preventDefault();
+      var section = document.getElementById(sectionId);
+      section.scrollIntoView({ behavior: "smooth" });
+    });
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 // Apply the smooth scrolling to each sub-menu link
@@ -68,26 +77,31 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Select all navbar links
-const navLinks = document.querySelectorAll('.nav-bar-medium a');
+const navLinks = document.querySelectorAll(".nav-bar-medium a");
 
-navLinks.forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault(); // prevent the default jump-to-anchor behavior
+navLinks.forEach((link) => {
+  try {
+    link.addEventListener("click", function (e) {
+      e.preventDefault(); // prevent the default jump-to-anchor behavior
 
-    const targetId = this.getAttribute('href'); // get the target id (e.g., "#home")
-    const targetElement = document.querySelector(targetId); // select the target element
+      const targetId = this.getAttribute("href"); // get the target id (e.g., "#home")
+      const targetElement = document.querySelector(targetId); // select the target element
 
-    const navbarHeight = document.querySelector('.nav-bar-medium').offsetHeight;
-    let positionToScrollTo = targetElement.offsetTop - navbarHeight;
+      const navbarHeight =
+        document.querySelector(".nav-bar-medium").offsetHeight;
+      let positionToScrollTo = targetElement.offsetTop - navbarHeight;
 
-    // If it's not the home link, adjust the position to scroll to
-    if (targetId !== "#home") {
-      positionToScrollTo += 50; // This is an arbitrary value; adjust as needed
-    }
+      // If it's not the home link, adjust the position to scroll to
+      if (targetId !== "#home") {
+        positionToScrollTo += 50; // This is an arbitrary value; adjust as needed
+      }
 
-    window.scrollTo({
-      top: positionToScrollTo,
-      behavior: 'smooth'
+      window.scrollTo({
+        top: positionToScrollTo,
+        behavior: "smooth",
+      });
     });
-  });
+  } catch (error) {
+    console.log(error);
+  }
 });
