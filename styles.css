@@ -432,6 +432,10 @@ body {
   margin: 0 auto; /* Center the paragraph if it's narrower than the max-width */
 }
 
+.juniors-english {
+  display: none;
+}
+
 .fixtures-section {
   text-align: center;
   padding-top: 60px; /* Adjust the padding to create the desired space between sections */
@@ -647,6 +651,10 @@ body {
     margin-right: 20px;
   }
 
+  .juniors-english {
+    display: none;
+  }
+
   .fixtures-text {
     display: flex; /* Flexbox layout to align items horizontally */ /* Set layout to flexbox */
     align-items: center; /* Center items vertically */ /* Vertical alignment in flexbox */
@@ -824,6 +832,10 @@ body {
   .article-picture {
     margin-left: 40px; /* Adjust this value as needed */
   }
+
+  .juniors-english {
+    display: none;
+  }
 }
 
 /* View port for Medium devices landscape */
@@ -977,6 +989,10 @@ body {
   }
 
   .hidden-on-mobile {
+    display: none;
+  }
+
+  .juniors-english {
     display: none;
   }
 
@@ -1294,21 +1310,26 @@ body {
 
   .content-container {
     width: 100%;
-}
+  }
 
   .juniors-section .content-container {
-    width: calc(50% - 10px); /* Takes up the remaining width, minus a small gap. Adjust as needed. */
+    width: calc(
+      50% - 10px
+    ); /* Takes up the remaining width, minus a small gap. Adjust as needed. */
     max-width: none; /* Override any max-width settings from other styles */
-    padding-left: 0px;  /* Spacing between the picture and the text */
-
+    padding-left: 0px; /* Spacing between the picture and the text */
   }
 
   .juniors-section .content-container p {
     max-width: none;
-    width: 100%;
-    text-align: left;  /* Aligns text to the left */
+    width: 95%;
+    text-align: left; /* Aligns text to the left */
     margin-left: 0; /* Gives some space between the image and the text */
     margin-right: 0;
+  }
+
+  .juniors-english {
+    display: block;
   }
 
   .contact-section {
