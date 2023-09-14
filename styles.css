@@ -1268,7 +1268,7 @@ body {
     width: 49%; /* Matches the width of the images above */
     text-align: left; /* Ensures content inside the div aligns to the left */
     margin-left: 110px; /* Adjust this value to move the image to the desired position */
-    margin-right: -220px;
+    margin-right: -210px;
   }
 
   .hidden-on-mobile {
@@ -1292,17 +1292,23 @@ body {
     align-items: start; /* Aligns items to the start (top) */
   }
 
+  .content-container {
+    width: 100%;
+}
+
   .juniors-section .content-container {
     width: calc(50% - 10px); /* Takes up the remaining width, minus a small gap. Adjust as needed. */
     max-width: none; /* Override any max-width settings from other styles */
-    padding-left: 10px;  /* Spacing between the picture and the text */
+    padding-left: 0px;  /* Spacing between the picture and the text */
 
   }
 
   .juniors-section .content-container p {
-
+    max-width: none;
+    width: 100%;
     text-align: left;  /* Aligns text to the left */
-    margin-left: 0px; /* Gives some space between the image and the text */
+    margin-left: 0; /* Gives some space between the image and the text */
+    margin-right: 0;
   }
 
   .section-title,
