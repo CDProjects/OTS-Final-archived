@@ -1310,6 +1310,7 @@ body {
 
   .content-container {
     width: 100%;
+    height: auto;
   }
 
   .juniors-section .content-container {
@@ -1330,6 +1331,7 @@ body {
 
   .juniors-english {
     display: block;
+    padding-top: 90px;
   }
 
   .contact-section {
