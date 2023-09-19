@@ -1386,6 +1386,12 @@ body {
     padding-top: 50px;
   }
 
+  .fixtures-section .date,
+  .fixtures-section .score,
+  .fixtures-section .teams {
+    font-size: 25px;
+  }
+
   .contact-section {
     background-color: #000;
   }
@@ -1416,14 +1422,8 @@ body {
   .mens-team p,
   .training-info p,
   .juniors-section .content-container p,
-  .fixtures-section .date,
-  .fixtures-section .score,
   .contact-info p {
     font-size: 23px; /* Adjust this value as needed */
-  }
-
-  .fixtures-section .teams {
-    font-size: 18px; /* Adjust this value as needed */
   }
 
   .date {
