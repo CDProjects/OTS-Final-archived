@@ -1276,7 +1276,8 @@ body {
     gap: 2rem; /* Gap between the two columns */
   }
 
-  .juniors, .mens-team {
+  .juniors,
+  .mens-team {
     margin-bottom: 30px;
   }
 
@@ -1392,6 +1393,18 @@ body {
     font-size: 25px;
   }
 
+  .teams {
+    margin-left: 0;
+    width: 260px;
+    text-align: left;
+  }
+
+  .date {
+    margin: 0;
+    width: 80px;
+    text-align: left;
+  }
+
   .contact-section {
     background-color: #000;
   }
@@ -1424,13 +1437,6 @@ body {
   .juniors-section .content-container p,
   .contact-info p {
     font-size: 23px; /* Adjust this value as needed */
-  }
-
-  .date {
-    margin-left: 15px; /* Adjustments for the date */
-    margin-right: -1px; /* Adjust as needed */
-    width: 70px; /* Fixed width for date column */
-    text-align: left; /* Left-aligned text */
   }
 
   .score {
