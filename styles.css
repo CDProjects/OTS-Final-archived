@@ -176,7 +176,7 @@ body {
   top: 30%;
   left: 0;
   transform: translateY(-50%);
-  background-color: #000; /* Set the background color */
+  background: none; /* Set the background color */
   padding: 1px 2px;
   border-top: 1px solid #ffffff; /* White top border */
   border-right: 1px solid #ffffff; /* White right border */
