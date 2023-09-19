@@ -1417,6 +1417,7 @@ body {
   .team-section h2,
   .fixtures-subtitle {
     font-size: 25px; /* Adjust this value as needed */
+    margin-top: 10px;
   }
 
   .forwards h3,
