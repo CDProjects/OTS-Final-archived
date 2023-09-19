@@ -105,3 +105,40 @@ navLinks.forEach((link) => {
     console.log(error);
   }
 });
+
+// Function to check if an element is in viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  const elemHalfHeight = element.offsetHeight / 2;
+  
+  return (
+      rect.top + elemHalfHeight >= 0 &&
+      rect.top + elemHalfHeight <= (window.innerHeight || document.documentElement.clientHeight)
+  );
+}
+
+// Function to set the document title based on the section in viewport
+function setDocumentTitle() {
+  const sections = [
+      {id: "home", title: "HOME"},
+      {id: "news-section", title: "NEWS"},
+      {id: "team-section", title: "TEAM"},
+      {id: "training-section", title: "TRAINING"},
+      {id: "juniors-section", title: "JUNIORS"},
+      {id: "fixtures-section", title: "FIXTURES"},
+      {id: "media-section", title: "MEDIA"},
+      {id: "contact-section", title: "CONTACT"}
+  ];
+  
+  for (const section of sections) {
+      const elem = document.getElementById(section.id);
+      if (isInViewport(elem)) {
+          document.title = `${section.title} | oldtownshamrocks`;
+          break;
+      }
+  }
+}
+
+// Add a scroll event listener to update the title
+window.addEventListener('scroll', setDocumentTitle);
+
