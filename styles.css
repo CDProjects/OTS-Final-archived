@@ -1420,6 +1420,14 @@ body {
     margin-top: 10px;
   }
 
+  .media-section {
+    background-color: #000;
+  }
+
+  .contact-section {
+    background: none;
+  }
+
   .forwards h3,
   .backs h3,
   .juniors h3,
