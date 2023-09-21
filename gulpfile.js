@@ -42,4 +42,4 @@ gulp.task('adjust-paths', function() {
 
 
 // Default task that runs all the above tasks
-gulp.task('default', gulp.parallel('minify-js', 'minify-css', 'minify-html', 'copy-images'));
+gulp.task('default', gulp.series('adjust-paths', gulp.parallel('minify-js', 'minify-css', 'minify-html', 'copy-images')));
