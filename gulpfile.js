@@ -26,7 +26,7 @@ gulp.task('minify-html', function() {
 
 //Task to add images to dist
 gulp.task('copy-images', function() {
-    return gulp.src('./images/**/*')
+    return gulp.src('./Images/**/*')
         .pipe(gulp.dest('./dist/images'));
 });
 
