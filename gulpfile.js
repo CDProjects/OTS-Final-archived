@@ -31,5 +31,15 @@ gulp.task('copy-images', function() {
         .pipe(gulp.dest('./dist/images'));
 });
 
+//Task to replace minified css, javascript and image paths
+gulp.task('adjust-paths', function() {
+    return gulp.src('./index.html')
+        .pipe(replace('href="styles.css"', 'href="css/styles.css"'))
+        .pipe(replace('src="scripts.js"', 'src="js/scripts.js"'))
+        .pipe(replace('src="Images/', 'src="images/'))
+        .pipe(gulp.dest('./dist'));
+});
+
+
 // Default task that runs all the above tasks
 gulp.task('default', gulp.parallel('minify-js', 'minify-css', 'minify-html', 'copy-images'));
