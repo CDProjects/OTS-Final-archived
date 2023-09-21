@@ -1,3 +1,4 @@
+const replace = require('gulp-replace');
 const gulp = require('gulp');
 const uglify = require('gulp-uglify');
 const cleanCSS = require('gulp-clean-css');
