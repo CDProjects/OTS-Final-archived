@@ -258,6 +258,25 @@ body {
   margin-bottom: 20px; /* Add space below the title */
 }
 
+.news-article .article-title,
+.news-article .article-subtitle {
+    text-align: center;
+}
+
+.news-article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.news-article .article-content {
+  padding: 0 1rem; /* 1rem padding on the left and right sides */
+  max-width: 90%; /* limit the maximum width */
+  margin: 0 auto; /* center the content */
+}
+
+
 .news-item {
   margin-bottom: 20px; /* Space between news items */
 }
