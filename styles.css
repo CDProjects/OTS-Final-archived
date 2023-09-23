@@ -1611,4 +1611,8 @@ body {
     display: block;
     padding-top: 30px;
   }
+
+  .article-content {
+    font-size: 17.5px;
+  }
 }
