@@ -870,7 +870,7 @@ body {
 }
 
 /* View port for iPadc Pro portrait */
-@media screen and (width: 1024px) and (height: 1366px) {
+@media screen and (width: 1024px) and (height: 1366px) and (orientation: portrait) {
 
   /* Increase size of logo */
   .home-image-medium {
