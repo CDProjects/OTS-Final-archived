@@ -1336,6 +1336,10 @@ body {
     margin-bottom: 20px; /* Adds space between the new images and the existing image */
   }
 
+  .article-content {
+    font-size: 20px;
+  }
+
   /* The styles for .juniors-picture and .juniors-image can be combined since they share several properties. */
   .juniors-picture,
   .juniors-image {
@@ -1473,7 +1477,7 @@ body {
   }
 }
 
-/* View port for iPadc Pro portrait */
+/* View port for iPad Pro portrait */
 @media screen and (width: 1024px) and (height: 1366px) and (orientation: portrait) {
   /* Increase size of logo */
   .home-image-medium {
@@ -1615,5 +1619,14 @@ body {
 
   .article-content {
     font-size: 17.5px;
+  }
+}
+
+@media screen and (width: 820px) and (height: 1180px) and (orientation: portrait) {
+
+  /* Move carousel right and up*/
+  .carousel-container .carousel {
+    margin-left: 300px; /* adjust as needed */
+    margin-top: -20px;
   }
 }
