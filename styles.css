@@ -870,6 +870,11 @@ screen and (min-width: 810px) and (max-width: 1080px) and (orientation: portrait
   }
 }
 
+/* View port for iPadc Pro landscape */
+@media screen and (width: 1024px) and (height: 1366px) {
+
+}
+
 /* View port for Medium devices landscape */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   /* Hide fixed side bar */
