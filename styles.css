@@ -1477,7 +1477,7 @@ body {
 }
 
 /* View port for iPad Pro portrait */
-@media screen and (min-width: 1024px) and (height: 1366px) and (orientation: portrait) {
+@media screen and (min-width: 1024px) and (max-with: 1366px) and (orientation: portrait) {
   /* Increase size of logo */
   .home-image-medium {
     width: 20%; /* Increase from the current width */
@@ -1683,11 +1683,9 @@ body {
   .home-paragraph {
     font-size: 15px;
   }
-
-  
 }
 
-/* View port for iPad Standard */
+/* View port for iPad Standard portrait */
 @media screen and (min-width: 810px) and (max-width: 1080px) and (orientation: portrait) {
   .carousel {
     display: flex;
@@ -1701,9 +1699,9 @@ body {
   }
 }
 
+/* View port for iPad Standard landscape */
 @media screen and (min-width: 810px) and (max-width: 1080px) and (orientation: landscape) {
-
-.home-club-medium {
+  .home-club-medium {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -1722,7 +1720,7 @@ body {
   }
 
   .juniors-section .content-container {
-    width: calc( 50% - 10px );
+    width: calc(50% - 10px);
     max-width: none;
     padding-left: 20px;
   }
@@ -1732,4 +1730,14 @@ body {
   }
 }
 
+/* View port for iPad Pro 11 inch portrait */
+@media screen and (min-width: 834px) and (max-width: 1194px) and (orientation: portrait) {
 
+  .paragraph-container {
+    position: absolute;
+    text-align: left;
+    top: 290px;
+    left: 55px;
+    z-index: 11;
+  }
+}
