@@ -1533,6 +1533,7 @@ body {
   }
 }
 
+/* View port for iPad Pro landscape */
 @media screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   /* Move home club container left*/
   .home-club-medium {
@@ -1622,11 +1623,74 @@ body {
   }
 }
 
+/* View port for iPad Air portrait */
 @media screen and (width: 820px) and (height: 1180px) and (orientation: portrait) {
-
   /* Move carousel right and up*/
   .carousel-container .carousel {
     margin-left: 300px; /* adjust as needed */
     margin-top: -20px;
+  }
+}
+
+/* View port for iPad Air landscape */
+@media screen and (width: 1180px) and (height: 820px) and (orientation: landscape) {
+  .home-club-medium {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    position: absolute;
+    top: 12%;
+    left: 18.6%;
+    z-index: 10;
+  }
+
+  .home-image-medium {
+    width: 15%; /* Increase from the current width */
+    margin-left: 0px;
+  }
+
+  .title-container h1 {
+    font-size: 30px; /* Scale the font-size */
+  }
+
+  .title-container h2 {
+    font-size: 20px; /* Scale the font-size */
+  }
+
+  .carousel-container .carousel {
+    margin-left: 170px; /* adjust as needed */
+  }
+
+  .carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-top: -90px;
+    padding-bottom: 35px;
+  }
+
+  .home-title {
+    font-size: 40px;
+    position: absolute;
+    text-align: left;
+    top: 310px;
+    left: 230px;
+    z-index: 11;
+  }
+
+  .paragraph-container {
+    position: absolute;
+    text-align: left;
+    top: 405px;
+    left: 230px;
+    z-index: 11;
+  }
+
+  .home-paragraph {
+    font-size: 15px;
   }
 }
