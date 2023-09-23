@@ -871,8 +871,14 @@ body {
 
 /* View port for iPadc Pro landscape */
 @media screen and (width: 1024px) and (height: 1366px) {
+
+  /* Increase size of logo */
   .home-image-medium {
-    width: 15%; /* Increase from the current width */
+    width: 20%; /* Increase from the current width */
+  }
+
+  .title-container {
+    width: 100%;
   }
 
   .title-container h1 {
