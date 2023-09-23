@@ -1595,4 +1595,20 @@ body {
   .home-paragraph {
     font-size: 15px;
   }
+
+  .juniors-picture-wrapper {
+    width: 49%;
+    text-align: left;
+    margin-left: 83px;
+    margin-right: -170px;
+  }
+
+  .juniors-section .content-container p {
+    font-size: 17.4px;
+  }
+
+  .juniors-english {
+    display: block;
+    padding-top: 30px;
+  }
 }
