@@ -873,6 +873,14 @@ screen and (min-width: 810px) and (max-width: 1080px) and (orientation: portrait
 /* View port for iPadc Pro landscape */
 @media screen and (width: 1024px) and (height: 1366px) {
 
+  .home-image-medium {
+    width: 15%; /* Increase from the current width */
+}
+
+.title-container h1{
+    font-size: 30px; /* Scale the font-size */
+}
+
 }
 
 /* View port for Medium devices landscape */
