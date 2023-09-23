@@ -1741,3 +1741,49 @@ body {
     z-index: 11;
   }
 }
+
+/* View port for iPad Pro 11 inch landscape */
+@media screen and (min-width: 834px) and (max-width: 1194px) and (orientation: landscape) {
+
+  .carousel-container .carousel {
+    margin-left: 160px;
+    height: 550px;
+  }
+
+  .home-image-medium {
+    width: 18%;
+    margin-left: -6px;
+  }
+
+  .title-container h1 {
+    font-size: 27px;
+  }
+
+  .home-title {
+    font-size: 40px;
+    position: absolute;
+    text-align: left;
+    top: 310px;
+    left: 233px;
+    z-index: 11;
+  }
+
+  .paragraph-container {
+    position: absolute;
+    text-align: left;
+    top: 400px;
+    left: 233px;
+    z-index: 11;
+  }
+
+  .juniors-picture-wrapper {
+    width: 49%;
+    text-align: left;
+    margin-left: 75px;
+    margin-right: -160px;
+  }
+
+  .juniors-section .content-container p {
+    font-size: 15.2px;
+  }
+}
