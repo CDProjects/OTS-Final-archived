@@ -869,12 +869,13 @@ body {
   }
 }
 
-/* View port for iPadc Pro landscape */
+/* View port for iPadc Pro portrait */
 @media screen and (width: 1024px) and (height: 1366px) {
 
   /* Increase size of logo */
   .home-image-medium {
     width: 20%; /* Increase from the current width */
+    margin-left: 11px;
   }
 
   .title-container {
@@ -897,6 +898,27 @@ body {
     height: 650px;
     overflow: hidden;
     margin-top: -30px;
+  }
+
+  .home-title {
+    font-size: 45px;
+    position: absolute;
+    text-align: left;
+    top: 310px;
+    left: 82px;
+    z-index: 11;
+  }
+
+  .paragraph-container {
+    position: absolute;
+    text-align: left;
+    top: 380px;
+    left: 82px;
+    z-index: 11;
+  }
+
+  .home-paragraph {
+    font-size: 15px;
   }
 }
 
