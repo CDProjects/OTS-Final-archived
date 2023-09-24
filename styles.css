@@ -1089,6 +1089,8 @@ body {
   }
 }
 
+
+
 @media (min-width: 1025px) {
   /* Desktop-specific CSS styles go here */
 
@@ -1787,3 +1789,4 @@ body {
     font-size: 15.2px;
   }
 }
+
