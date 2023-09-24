@@ -25,12 +25,6 @@ gulp.task('minify-html', function() {
         .pipe(gulp.dest('./dist'));
 });
 
-//Task to add images to dist
-gulp.task('copy-images', function() {
-    return gulp.src('./Images/**/*')
-        .pipe(gulp.dest('./dist/images'));
-});
-
 //Task to replace minified css, javascript and image paths
 gulp.task('adjust-paths', function() {
     return gulp.src('./index.html')
@@ -40,6 +34,5 @@ gulp.task('adjust-paths', function() {
         .pipe(gulp.dest('./dist'));
 });
 
-
 // Default task that runs all the above tasks
-gulp.task('default', gulp.series('adjust-paths', gulp.parallel('minify-js', 'minify-css', 'minify-html', 'copy-images')));
+gulp.task('default', gulp.series('adjust-paths', gulp.parallel('minify-js', 'minify-css', 'minify-html')));
