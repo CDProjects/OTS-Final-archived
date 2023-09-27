@@ -538,6 +538,37 @@ body {
   margin: 10px 0; /* Add some space above and below each image */
 }
 
+/* Recruiting Section CSS for Mobile View */
+.recruiting-section {
+  padding: 0;  /* Removing padding */
+  margin: 0;  /* Removing margin */
+  background-color: black; /* Light gray background for distinction. Adjust as needed */
+}
+
+.recruiting-image {
+  width: 100%;
+  max-width: 400px; /* Ensuring the image doesn't get too large on mobile */
+  margin: 20px 0;  /* Adding some space above and below the image */
+  display: block;  /* Makes the image center-aligned */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recruiting-content {
+  padding: 20px;  /* Providing internal padding for the text content */
+}
+
+.recruiting-content h2 {
+  font-size: 1.5rem;  /* Slightly larger font for the heading */
+  margin-top: 20px;   /* Space above the heading */
+}
+
+.recruiting-content p {
+  font-size: 1rem;    /* Standard font size for mobile */
+  margin-bottom: 20px; /* Space below the paragraph */
+}
+
+
 .contact-section {
   text-align: center;
   padding: 60px 0; /* Adjust the padding to create the desired space between sections */
