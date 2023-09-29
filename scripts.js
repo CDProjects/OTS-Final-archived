@@ -28,23 +28,27 @@ document.getElementById("home-link").addEventListener("click", function (e) {
 // Smooth scrolling for each sub menu
 function smoothScrollToSection(linkId, sectionId) {
   try {
-      document.getElementById(linkId).addEventListener("click", function (e) {
-          e.preventDefault();
-          
-          var section = document.getElementById(sectionId);
-          
-          // Dynamically calculate the navbar height and section margin-top at the moment of click
-          var navbarHeight = document.querySelector(".nav-bar-medium").offsetHeight;
-          var sectionMarginTop = parseInt(window.getComputedStyle(section).marginTop, 10);  // Gets the margin-top value as an integer
-          var positionToScrollTo = section.offsetTop - navbarHeight - sectionMarginTop;
+    document.getElementById(linkId).addEventListener("click", function (e) {
+      e.preventDefault();
 
-          window.scrollTo({
-              top: positionToScrollTo,
-              behavior: "smooth"
-          });
+      var section = document.getElementById(sectionId);
+
+      // Dynamically calculate the navbar height and section margin-top at the moment of click
+      var navbarHeight = document.querySelector(".nav-bar-medium").offsetHeight;
+      var sectionMarginTop = parseInt(
+        window.getComputedStyle(section).marginTop,
+        10
+      ); // Gets the margin-top value as an integer
+      var positionToScrollTo =
+        section.offsetTop - navbarHeight - sectionMarginTop;
+
+      window.scrollTo({
+        top: positionToScrollTo,
+        behavior: "smooth",
       });
+    });
   } catch (error) {
-      console.log(error);
+    console.log(error);
   }
 }
 
@@ -121,35 +125,60 @@ navLinks.forEach((link) => {
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
   const elemHalfHeight = element.offsetHeight / 2;
-  
+
   return (
-      rect.top + elemHalfHeight >= 0 &&
-      rect.top + elemHalfHeight <= (window.innerHeight || document.documentElement.clientHeight)
+    rect.top + elemHalfHeight >= 0 &&
+    rect.top + elemHalfHeight <=
+      (window.innerHeight || document.documentElement.clientHeight)
   );
 }
 
-// Function to set the document title based on the section in viewport
-function setDocumentTitle() {
-  const sections = [
-      {id: "home", title: "HOME"},
-      {id: "news-section", title: "NEWS"},
-      {id: "team-section", title: "TEAM"},
-      {id: "training-section", title: "TRAINING"},
-      {id: "juniors-section", title: "JUNIORS"},
-      {id: "fixtures-section", title: "FIXTURES"},
-      {id: "media-section", title: "MEDIA"},
-      {id: "contact-section", title: "CONTACT"}
+// Function to track markers and update the title
+function trackMarkersAndUpdateTitle() {
+  const markers = [
+      { sectionId: "home", markerId: "home-marker", title: "HOME" },
+      { sectionId: "news-section", markerId: "news-marker", title: "NEWS" },
+      { sectionId: "team-section", markerId: "team-marker", title: "TEAM" },
+      { sectionId: "training-section", markerId: "training-marker", title: "TRAINING" },
+      { sectionId: "juniors-section", markerId: "juniors-marker", title: "JUNIORS" },
+      { sectionId: "fixtures-section", markerId: "fixtures-marker", title: "FIXTURES" },
+      { sectionId: "media-section", markerId: "media-marker", title: "MEDIA" },
+      { sectionId: "recruiting-section", markerId: "recruiting-marker", title: "RECRUITMENT" },
+      { sectionId: "contact-section", markerId: "contact-marker", title: "CONTACT" },
   ];
-  
-  for (const section of sections) {
-      const elem = document.getElementById(section.id);
-      if (isInViewport(elem)) {
-          document.title = `${section.title} | oldtownshamrocks`;
-          break;
+
+  let hasSectionEnteredViewport = false;
+  let currentSectionTitle = null;
+  let previousSectionTitle = null;
+
+  for (const marker of markers) {
+      const markerElement = document.getElementById(marker.markerId);
+      const rect = markerElement.getBoundingClientRect();
+
+      // Check if at least 50% of the marker is visible
+      if (rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) * 0.5) {
+          hasSectionEnteredViewport = true;
+          currentSectionTitle = marker.title;
+          break; // Exit the loop if a marker is in the viewport
       }
   }
+
+    // Check if the user has scrolled close to the top of the page
+    if (!hasSectionEnteredViewport && window.scrollY < 200) {
+      document.title = "HOME | oldtownshamrocks";
+  } else if (currentSectionTitle) {
+      document.title = `${currentSectionTitle} | oldtownshamrocks`;
+  }
+
+  // Update the previous section title
+  previousSectionTitle = currentSectionTitle;
 }
 
-// Add a scroll event listener to update the title
-window.addEventListener('scroll', setDocumentTitle);
+// Initialize the previousSectionTitle variable
+let previousSectionTitle = "HOME";
 
+// Call the function on scroll
+window.addEventListener('scroll', trackMarkersAndUpdateTitle);
+
+// Call the function on page load
+window.addEventListener('DOMContentLoaded', trackMarkersAndUpdateTitle);
