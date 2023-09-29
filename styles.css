@@ -542,7 +542,7 @@ body {
 .recruiting-section {
   padding: 0;  /* Removing padding */
   margin-top: 60px;  /* Removing margin */
-  background-color: black; /* Light gray background for distinction. Adjust as needed */
+  background-color: none; /* Light gray background for distinction. Adjust as needed */
 }
 
 .recruiting-section h2, h1{
@@ -581,6 +581,7 @@ body {
   text-align: center;
   padding: 60px 0; /* Adjust the padding to create the desired space between sections */
   color: #ffffff; /* White text color */
+  background-color: #000;
 }
 
 .contact-section h1 {
@@ -1126,6 +1127,18 @@ body {
   .score {
     margin-right: -9px; /* Adjust this value as needed */
   }
+
+  .recruiting-section {
+    padding-top: 60px;
+  }
+
+  .recruiting-section-title {
+    font-size: 30px;
+  }
+
+  .recruiting-section h1 {
+    margin-top: 0px;
+  }
 }
 
 
@@ -1489,7 +1502,7 @@ body {
   }
 
   .contact-section {
-    background: none;
+    background: black;
   }
 
   .forwards h3,
@@ -1514,6 +1527,29 @@ body {
 
   .score {
     margin-right: -9px; /* Adjust this value as needed */
+  }
+
+  .recruiting-section {
+    padding-top: 60px;
+  }
+
+  .recruiting-section-title {
+    font-size: 30px;
+  }
+
+  .recruiting-section h1 {
+    margin-top: 0px;
+  }
+
+  .recruiting-content h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .recruiting-content p {
+    font-size: 23px;
+    font-display: center;
   }
 }
 
@@ -1561,6 +1597,18 @@ body {
 
   .home-paragraph {
     font-size: 15px;
+  }
+
+  .recruiting-section {
+    padding-top: 60px;
+  }
+
+  .recruiting-section-title {
+    font-size: 30px;
+  }
+
+  .recruiting-section h1 {
+    margin-top: 0px;
   }
 }
 
@@ -1652,6 +1700,18 @@ body {
   .article-content {
     font-size: 17.5px;
   }
+
+  .recruiting-section {
+    padding-top: 60px;
+  }
+
+  .recruiting-section-title {
+    font-size: 30px;
+  }
+
+  .recruiting-section h1 {
+    margin-top: 0px;
+  }
 }
 
 /* View port for iPad Air portrait */
@@ -1660,6 +1720,18 @@ body {
   .carousel-container .carousel {
     margin-left: 300px; /* adjust as needed */
     margin-top: -20px;
+  }
+
+  .recruiting-section {
+    padding-top: 60px;
+  }
+
+  .recruiting-section-title {
+    font-size: 30px;
+  }
+
+  .recruiting-section h1 {
+    margin-top: 0px;
   }
 }
 
@@ -1724,6 +1796,14 @@ body {
   .home-paragraph {
     font-size: 15px;
   }
+
+  .recruiting-section {
+    padding-top: 60px;
+  }
+
+  .recruiting-section-title {
+    font-size: 30px;
+  }
 }
 
 /* View port for iPad Standard portrait */
@@ -1737,6 +1817,14 @@ body {
     overflow: hidden;
     margin-top: -20px;
     margin-left: 290px;
+  }
+
+  .recruiting-section {
+    padding-top: 60px;
+  }
+
+  .recruiting-section-title {
+    font-size: 30px;
   }
 }
 
@@ -1768,6 +1856,14 @@ body {
 
   .juniors-section .content-container p {
     font-size: 13.72px;
+  }
+
+  .recruiting-section {
+    padding-top: 60px;
+  }
+
+  .recruiting-section-title {
+    font-size: 30px;
   }
 }
 
@@ -1826,6 +1922,14 @@ body {
 
   .juniors-section .content-container p {
     font-size: 15.2px;
+  }
+
+  .recruiting-section {
+    padding-top: 60px;
+  }
+
+  .recruiting-section-title {
+    font-size: 30px;
   }
 }
 

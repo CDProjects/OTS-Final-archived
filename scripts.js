@@ -33,7 +33,7 @@ function smoothScrollToSection(linkId, sectionId) {
           
           var section = document.getElementById(sectionId);
           
-          // Calculate the position to scroll to by subtracting both the navbar height and the section margin-top
+          // Dynamically calculate the navbar height and section margin-top at the moment of click
           var navbarHeight = document.querySelector(".nav-bar-medium").offsetHeight;
           var sectionMarginTop = parseInt(window.getComputedStyle(section).marginTop, 10);  // Gets the margin-top value as an integer
           var positionToScrollTo = section.offsetTop - navbarHeight - sectionMarginTop;
@@ -47,7 +47,6 @@ function smoothScrollToSection(linkId, sectionId) {
       console.log(error);
   }
 }
-
 
 // Apply the smooth scrolling to each sub-menu link
 smoothScrollToSection("news-link", "news-section");
