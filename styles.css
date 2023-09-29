@@ -541,8 +541,13 @@ body {
 /* Recruiting Section CSS for Mobile View */
 .recruiting-section {
   padding: 0;  /* Removing padding */
-  margin: 0;  /* Removing margin */
+  margin-top: 60px;  /* Removing margin */
   background-color: black; /* Light gray background for distinction. Adjust as needed */
+}
+
+.recruiting-section h2, h1{
+  text-align: center;
+
 }
 
 .recruiting-image {
@@ -565,6 +570,9 @@ body {
 
 .recruiting-content p {
   font-size: 1rem;    /* Standard font size for mobile */
+  padding: 0 1rem;
+  max-width: 82%;
+  margin: 0 auto;
   margin-bottom: 20px; /* Space below the paragraph */
 }
 
