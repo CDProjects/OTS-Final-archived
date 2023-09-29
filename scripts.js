@@ -28,15 +28,26 @@ document.getElementById("home-link").addEventListener("click", function (e) {
 // Smooth scrolling for each sub menu
 function smoothScrollToSection(linkId, sectionId) {
   try {
-    document.getElementById(linkId).addEventListener("click", function (e) {
-      e.preventDefault();
-      var section = document.getElementById(sectionId);
-      section.scrollIntoView({ behavior: "smooth" });
-    });
+      document.getElementById(linkId).addEventListener("click", function (e) {
+          e.preventDefault();
+          
+          var section = document.getElementById(sectionId);
+          
+          // Calculate the position to scroll to by subtracting both the navbar height and the section margin-top
+          var navbarHeight = document.querySelector(".nav-bar-medium").offsetHeight;
+          var sectionMarginTop = parseInt(window.getComputedStyle(section).marginTop, 10);  // Gets the margin-top value as an integer
+          var positionToScrollTo = section.offsetTop - navbarHeight - sectionMarginTop;
+
+          window.scrollTo({
+              top: positionToScrollTo,
+              behavior: "smooth"
+          });
+      });
   } catch (error) {
-    console.log(error);
+      console.log(error);
   }
 }
+
 
 // Apply the smooth scrolling to each sub-menu link
 smoothScrollToSection("news-link", "news-section");
@@ -45,12 +56,13 @@ smoothScrollToSection("training-link", "training-section");
 smoothScrollToSection("juniors-link", "juniors-section");
 smoothScrollToSection("fixtures-link", "fixtures-section");
 smoothScrollToSection("media-link", "media-section");
+smoothScrollToSection("recruiting-link", "recruiting-section");
 smoothScrollToSection("contact-link", "contact-section");
 
 // Smooth scrolling for the about-us-btn
 document.querySelector(".about-us-btn").addEventListener("click", function (e) {
   e.preventDefault();
-  var section = document.getElementById("contact-section");
+  var section = document.getElementById("recruiting-section");
   section.scrollIntoView({ behavior: "smooth" });
 });
 
